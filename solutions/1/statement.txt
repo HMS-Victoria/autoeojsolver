@@ -1,0 +1,13 @@
+# 1. A+B Problem
+来源: https://acm.ecnu.edu.cn/problem/1/
+
+Given $( a , b )$ , output $( a + b )$ .
+样例: 3821 人解决，3924 人已尝试。
+
+## 样例
+
+### 样例 1
+输入:
+1 2
+输出:
+3

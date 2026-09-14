@@ -1,0 +1,14 @@
+=== Sample 1 Input ===
+6 2
+acmacm
+cmacma
+6 3
+acmacm
+cmacma
+5 2
+hello
+ahelo
+=== Sample 1 Output ===
+2
+1
+2

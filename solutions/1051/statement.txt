@@ -1,0 +1,61 @@
+# 1051. 完全加括号的矩阵连乘积
+来源: https://acm.ecnu.edu.cn/contest/43/problem/1051/
+
+给定一个存储了若干个以字符串表示的分数构成的单向链表。将链表按照节点中的分数值从小到大排序。
+分数的格式为
+分子 / 分母
+（$-10^8 \le$ 分子 $\le 10^8$, $1 <$ 分母 $\le 10^8$），分母为 1 时的格式退化为
+分子
+（即：分母不出现）。
+当两个分数值相等时，分子小的那个数排在前面。
+例如：
+结构体类型 NODE 表示一个单向链表的节点定义。定义函数 SortRationalList, 返回排序后链表的头指针。
+// ********** Definition of the structure **********
+typedef
+struct
+Node
+{
+char
+value
+[
+100
+];
+// 以字符串形式存贮的分数
+struct
+Node
+*
+next
+;
+}
+NODE
+;
+//****** Specification of SortRationalList ******
+NODE
+*
+SortRationalList
+(
+NODE
+*
+h
+);
+/* PreCondition:
+h is a head pointer of a linked-list
+PostCondition:
+return the head pointer of the sorted linked-list
+*/
+
+## 样例
+
+### 样例 1
+输入:
+3
+2 2 1
+5 15 -3/6 5/2 -6/12 -2
+4 1/2 2/4 -1/2 -2/4
+输出:
+case #0:
+ 1 2
+case #1:
+ -2 -6/12 -3/6 5/2 15
+case #2:
+ -2/4 -1/2 1/2 2/4

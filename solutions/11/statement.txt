@@ -1,0 +1,15 @@
+# 11. Cacey and Calphabet
+来源: https://acm.ecnu.edu.cn/problem/11/
+
+作为一个土生土长的蓝桥镇居民，Cacey 时常会去考虑一些根本没有实际应用的问题。现有一个只由小写英文字母组成的字符串。如果字符串删去零个、一个或多个字符后可以得到"abcdefghijklmnopqrstuvwxyz"，那么就称这个字符串为 Calphabetical（可能是希腊语）。给出一个字符串 (s)，为了使这个字符串变成 Calphabetical 字符串，你可能需要插入一些字符。那么，你需要插入多少个字符呢？
+输入格式: 一行一个字符串 (s) ((1 \leq |s| \leq 50))。输入保证在 (s) 中只出现小写英文字母。
+输出格式: 输出一个整数，表示答案。
+样例: 205 人解决，244 人已尝试。
+
+## 样例
+
+### 样例 1
+输入:
+xyzabcdefghijklmnopqrstuvw
+输出:
+3

@@ -1,0 +1,12 @@
+=== Sample 1 Input ===
+3
+ABCBCCCAA
+AAA
+ABC
+=== Sample 1 Output ===
+case #0:
+9
+case #1:
+4
+case #2:
+2

@@ -1,0 +1,38 @@
+## 本地测试结果
+
+测试时间: 2026-05-28 13:33:20
+
+- 编译: 通过
+- 样例 1: 通过
+- 编译: 失败
+  ```
+  D:\desktop\obj_eoj\eoj_auto_solver_project\submit_1119.cpp:51:61: error: return type 'class std::tuple<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, bool, long long int>' is incomplete
+ tuple<string, bool, long long> parse_line(const string& line) {
+                                                             ^
+D:\desktop\obj_eoj\eoj_auto_solver_project\submit_1119.cpp: In function 'int main()':
+D:\desktop\obj_eoj\eoj_auto_solver_project\submit_1119.cpp:86:14: 
+  ```
+- 编译: 通过
+- 样例 1: 通过
+- 编译: 通过
+- 样例 1: 通过
+- 编译: 通过
+- 样例 1: 通过
+- 编译: 通过
+- 样例 1: 通过
+- 编译: 通过
+- 样例 1: 通过
+- 编译: 通过
+- 样例 1: 通过
+- 编译: 通过
+- 样例 1: 通过
+- 编译: 通过
+- 样例 1: 通过
+- 编译: 通过
+- 样例 1: 通过
+- 编译: 通过
+- 样例 1: 通过
+- 编译: 通过
+- 样例 1: 通过
+- 编译: 通过
+- 样例 1: 通过

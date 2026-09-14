@@ -1,0 +1,12 @@
+=== Sample 1 Input ===
+3
+6 4
+20 8
+50 20
+=== Sample 1 Output ===
+case #0:
+2
+case #1:
+13
+case #2:
+1969

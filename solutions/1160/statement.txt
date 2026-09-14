@@ -1,0 +1,16 @@
+# 1160. Date with MM
+来源: https://acm.ecnu.edu.cn/problem/1160/
+
+Tomorrow I will have a date with a MM but unfortunatelly  I forgot the specific time.It seems to be between M o’clock & N o’clock.So I choose sometime between the span tobe there and wait for her(the waiting hours should be within t hours).So what’s the probability can I meet her(assuming that she will never wait for me)
+输入格式: 3 real numbers M,N,T
+输出格式: The probability should be remain 3 digits of fraction
+样例: 26 人解决，47 人已尝试。
+
+## 样例
+
+### 样例 1
+输入:
+8.00 9.00 0.5
+hint:0.5表示半个小时,8.5表示8点半
+输出:
+0.375

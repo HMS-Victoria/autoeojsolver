@@ -1,0 +1,35 @@
+# 1154. Can you do DFS?
+来源: https://acm.ecnu.edu.cn/contest/43/problem/1154/
+
+计算字符串 s1 和字符串 s2 在字符串 s 中的最大间距。
+间距指一个字符串的尾字符与另一个字符串首字符之间的字符个数，显然间距是一个非负整数。
+当 s1 或 s2 没有在 s 中出现时，间距为 0。
+例如 : s1 为
+ab
+, s2 为
+bd
+, s 为
+bdabbdcdabdababcccbd
+, 则最大间距为 14。
+
+## 样例
+
+### 样例 1
+输入:
+3
+ab
+bd
+bdabbdcdabdababcccbd
+a
+a
+aaa
+a11
+a21
+a11xa21xa11xa21xa21xa11
+输出:
+case #0:
+14
+case #1:
+1
+case #2:
+13

@@ -1,0 +1,5 @@
+=== Sample 1 Input ===
+12 AGCGCGATTTTT
+14 ATTTTTTACGCGCA
+=== Sample 1 Output ===
+5

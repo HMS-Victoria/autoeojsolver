@@ -1,0 +1,14 @@
+# 8. 愚人节快乐
+来源: https://acm.ecnu.edu.cn/problem/8/
+
+样例Input3Output112Input6Output112358Input7Output1123581Input9Output112358132
+样例: 愚人节的规则是，发送消息的长度不能超过 100。
+提示: 愚人节的规则是，发送消息的长度不能超过 100。
+
+## 样例
+
+### 样例 1
+输入:
+3
+输出:
+112

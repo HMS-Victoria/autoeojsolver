@@ -1,0 +1,17 @@
+# 16. Cows and Farmer John
+来源: https://acm.ecnu.edu.cn/problem/16/
+
+2017年了，奶牛也越来越聪明了，她们甚至想出了一个Farmer John都无法回答的问题。$$F_k(n) =\begin{cases}f(F_{k-1}(n)) & {k > 1}\f(n) & otherwise\end{cases}$$其中$$f(n) =\begin{cases}\mathrm{不大于n的素数个数} & {n > 1} \1 & otherwise\end{cases}$$给定 $k, n$，求 $F_k(n)$。
+输入格式: 不超过 $100$ 组数据，每组数据一行两个整数： $1 \leq k \leq 10^{18}, 1 \leq n \leq 10^6$。处理到文件结束。
+输出格式: 每行一个答案。
+样例: 61 人解决，73 人已尝试。
+
+## 样例
+
+### 样例 1
+输入:
+1 20
+2 20
+输出:
+8
+4

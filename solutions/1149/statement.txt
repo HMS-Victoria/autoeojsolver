@@ -1,0 +1,39 @@
+# 1149. Russian Dolls
+来源: https://acm.ecnu.edu.cn/contest/43/problem/1149/
+
+WHU ACM Team is working on a brand new web browser named “Whu-Super-Browser”. You’re in response for a powerful feature: recording the previous addresses. Moreover, when a string is inputted, the browser will display all the addresses start with it. The addresses shall be sorted by visited times, in descending order. This feature is very useful to users.
+Can you complete it?
+There’re two kinds of operations:
+Visit
+[url_str]
+: visit a website with the URL:
+[url_str]
+.
+Display
+[str]
+: display all addresses start with
+[str]
+and sort them by visited times, in descending order. If two addresses have the same visited times, then sort them in the lexicographical order.
+
+## 样例
+
+### 样例 1
+输入:
+1
+10
+Visit http://acm.whu.edu.cn
+Visit http://acm.pku.edu.cn
+Visit http://acm.timus.ru
+Visit http://acm.whu.edu.cn
+Visit http://acm.whu.edu.cn
+Visit http://acm.pku.edu.cn
+Display http://acm
+Visit baidu.com
+Visit www.whu.edu.cn
+Display b
+输出:
+http://acm.whu.edu.cn
+http://acm.pku.edu.cn
+http://acm.timus.ru
+
+baidu.com

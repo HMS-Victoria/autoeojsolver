@@ -1,0 +1,14 @@
+# EOJ 自动刷题系统 依赖清单
+# 安装: pip install -r requirements.txt
+# Designed by HMS_Victorious
+
+# ---- 必需 ----
+requests>=2.28.0          # HTTP 请求（EOJ 登录/抓题/提交 + 模型 API）
+beautifulsoup4>=4.11.0    # HTML 解析
+pillow>=9.3.0             # 验证码图片处理
+pycryptodome>=3.17.0      # RSA-OAEP 加密 EOJ 登录密码
+ddddocr>=1.4.0            # 验证码自动识别（算术题）
+
+# ---- 可选 ----
+colorama>=0.4.6           # CLI 彩色输出（无 colorama 时自动降级为纯文本）
+pytest>=7.0.0             # 运行 tests/ 下的测试套件

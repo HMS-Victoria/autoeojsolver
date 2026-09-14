@@ -1,0 +1,19 @@
+=== Sample 1 Input ===
+1
+10
+Visit http://acm.whu.edu.cn
+Visit http://acm.pku.edu.cn
+Visit http://acm.timus.ru
+Visit http://acm.whu.edu.cn
+Visit http://acm.whu.edu.cn
+Visit http://acm.pku.edu.cn
+Display http://acm
+Visit baidu.com
+Visit www.whu.edu.cn
+Display b
+=== Sample 1 Output ===
+http://acm.whu.edu.cn
+http://acm.pku.edu.cn
+http://acm.timus.ru
+
+baidu.com

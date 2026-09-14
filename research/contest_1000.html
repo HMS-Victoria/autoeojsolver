@@ -1,0 +1,318 @@
+
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="icon" href="/static/favicon.ico">
+  <link rel="stylesheet" href="/static/node_modules/npm-font-open-sans/open-sans.css">
+  <link rel="stylesheet" href="/static/node_modules/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/static/css/app.min.css?v=1620609533">
+  <link rel="stylesheet" href="/static/node_modules/simplemde/dist/simplemde.min.css">
+  <script src="/static/node_modules/jquery/dist/jquery.min.js"></script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    
+
+    gtag('config', 'UA-136856183-1');
+
+    // Feature detects Navigation Timing API support.
+    if (window.performance) {
+      // Gets the number of milliseconds since page load
+      // (and rounds the result since the value must be an integer).
+      var timeSincePageLoad = Math.round(performance.now());
+
+      // Sends the timing event to Google Analytics.
+      gtag('event', 'timing_complete', {
+        'name': 'load',
+        'value': timeSincePageLoad,
+        'event_category': 'JS Dependencies'
+      });
+    }
+  </script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-136856183-1"></script>
+
+  
+  
+  <title>2026 ECNU 团体程序设计天梯赛选拔赛 #3 - ECNU Online Judge</title>
+</head>
+
+<body class="local-body">
+
+
+
+
+
+
+
+<div class="ui top fixed menu" id="navbar">
+
+  <div class="ui container" id="navbar-small">
+    <div class="ui pointing dropdown link item">
+      <i class="content icon"></i>
+      <span class="text"><b>EOJ</b></span>
+      <div class="menu">
+        <a class="item" href="/">首页</a>
+        <a class="item" href="/contest/">比赛</a>
+        <a class="item" href="/problem/list/">题目集</a>
+        <a class="item" href="/contest/gym/">作业</a>
+      </div>
+    </div>
+
+    <div class="right menu">
+      
+  
+    <div class="item"><a class="ui primary button" href="/login/?next=/contest/1000/">登入</a></div>
+  
+
+    </div>
+  </div>
+
+  <div class="ui container" id="navbar-large">
+    <a class=" item" href="/"><i class="home icon"></i>首页</a>
+    <a class=" item" href="/contest/"><i class="flag icon"></i>比赛</a>
+    <a class="item " href="/problem/"><i class="book icon"></i>题目集</a>
+    <a class=" item" href="/contest/gym/"><i class="paper plane icon"></i>作业</a>
+
+
+    <div class="right menu">
+      <div class="ui category search item massive-search">
+        <div class="ui transparent icon input">
+          <input class="prompt" type="text" placeholder="搜索...">
+          <i class="search link icon"></i>
+        </div>
+        <div class="results"></div>
+      </div>
+      
+  
+    <div class="item"><a class="ui primary button" href="/login/?next=/contest/1000/">登入</a></div>
+  
+
+    </div>
+  </div>
+</div>
+  <div class="pusher">
+  <div class="ui main container">
+  
+    <h1 class="ui header">2026 ECNU 团体程序设计天梯赛选拔赛 #3</h1>
+  
+    
+
+
+  <div class="ui text stackable menu">
+    <a class="active  item" href="/contest/1000/">仪表盘</a>
+    
+    
+      <a class=" item" href="/contest/1000/status/">所有提交</a>
+      <a class=" item" href="/contest/1000/standings/">榜单</a>
+    
+    
+    
+    
+  </div>
+
+  
+    <div class="ui stackable grid">
+      <div class="twelve wide column">
+        
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+    <h3 class="ui header">
+      <i class="announcement icon"></i>
+      <div class="content">
+        公告
+        <div class="sub header">请留意阅读</div>
+      </div>
+    </h3>
+
+    <p>第十一届 “<a href="https://gplt.patest.cn/">中国高校计算机大赛 团体程序设计天梯赛</a>” 由全国高等学校计算机教育研究会主办，定于 2026 年 4 月 18 日在线上、线下同时举行。<br/>
+竞赛时间： 4 月 18 日 13:30-16:30 。</p>
+<p>由于参赛名额有限， 2026 年华东师范大学的团体程序设计天梯赛参赛选手的校内选拔赛将在 EOJ 举行，选拔赛结束后将按照三次选拔赛的分数加权之和排名进行分队参赛。</p>
+<p>本场选拔赛的时间为 3 月 18 日 13:30-16:30 ，届时<strong>请提前到达机房调试设备</strong>，因个人原因缺失的时间不补，缺席则该场分数记为 0。</p>
+<p>选拔赛的报名已经截止，如有疑问请联系 acmsupport@admin.ecnu.edu.cn 。</p>
+
+    
+  <div class="ui hidden divider"></div>
+
+
+  
+
+  
+
+  <h3 class="ui header">
+    <i class="info circle icon"></i>
+    <div class="content">
+      比赛信息
+
+    </div>
+  </h3>
+
+  <ul class="ui list">
+    
+      <li class="item">
+        时长: <b>3 小时</b>
+      </li>
+      <li class="item">
+        开始时间: 
+<a href="https://www.timeanddate.com/worldclock/fixedtime.html?day=18&month=3&year=2026&hour=13&min=30&sec=0&p1=237">2026-03-18 13:30</a>
+ (2 月，1 周前)
+      </li>
+    
+    
+  </ul>
+  
+  <div class="ui hidden divider"></div>
+
+
+  
+
+
+
+      </div>
+      <div class="four wide column">
+        <div class="ui segments">
+        
+          <div class="ui segment">
+            <div class="ui center aligned header">
+              
+                已结束
+              
+            </div>
+          </div>
+          <div class="ui segment">
+            <div class="ui blue progress" data-status="1">
+              <div class="bar"></div>
+              
+              <div class="label">NaN</div>
+              
+            </div>
+          </div>
+        
+        
+        </div>
+
+        
+
+      </div>
+    </div>
+  
+
+  <div class="ui basic tiny modal" id="refreshNotification">
+    <div class="ui icon header">
+      <i class="announcement icon"></i>
+      通知
+    </div>
+    <div class="content">
+      比赛状态发生变化，点 OK 刷新。
+    </div>
+    <div class="actions">
+      <div class="ui green ok inverted button" onclick="location.reload(true);">
+        <i class="checkmark icon"></i>
+        OK
+      </div>
+    </div>
+  </div>
+
+  <div class="ui basic tiny modal" id="stayNotification">
+    <div class="ui icon header">
+      <i class="announcement icon"></i>
+      通知
+    </div>
+    <div class="content" id="stayNotificationBody">
+    </div>
+    <div class="actions">
+      <div class="ui green ok inverted button">
+        <i class="checkmark icon"></i>
+        OK
+      </div>
+    </div>
+  </div>
+
+
+  </div>
+  <div class="ui inverted vertical footer segment">
+  <div class="ui container">
+    <div class="ui stackable inverted divided equal height stackable grid">
+      <div class="three wide column">
+        <h4 class="ui inverted header">服务</h4>
+        <div class="ui inverted link list">
+          <a href="/" class="item">首页</a>
+          <a href="/feedback/" class="item">反馈</a>
+          <a href="/polygon/" class="item">Polygon</a>
+          <a href="/wiki/index.php?title=Main_Page" class="item">Wiki</a>
+        </div>
+      </div>
+      <div class="three wide column">
+        <h4 class="ui inverted header">开源</h4>
+        <div class="ui inverted link list">
+          <a href="https://github.com/ultmaster/eoj3" class="item">Github</a>
+          <a href="https://github.com/ultmaster/ejudge" class="item">eJudge</a>
+        </div>
+      </div>
+      <div class="seven wide column">
+        <h4 class="ui inverted header">关于我们</h4>
+        <p>团队: <a href="https://github.com/ultmaster">@ultmaster</a>, <a href="https://github.com/zerolfx">@zerol</a>, <a href="https://github.com/kblackcn">@kblack</a>.<br>
+        联系方式: <a href="mailto:acmsupport@admin.ecnu.edu.cn">acmsupport@admin.ecnu.edu.cn</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+  </div>
+
+
+<script>
+  MathJax = {
+    tex: {
+      inlineMath: [
+        ['\\(', '\\)'],
+        ['$', '$']
+      ],
+      displayMath: [
+        ['$$', '$$'],
+        ['\\[', '\\]']
+      ],
+    }
+  };
+</script>
+<script src="/static/node_modules/mathjax/es5/tex-chtml-full.js"></script>
+<script src="/static/node_modules/moment/moment.js"></script>
+<script src="/static/node_modules/clipboard/dist/clipboard.min.js"></script>
+<script src="/static/node_modules/js-cookie/src/js.cookie.js"></script>
+<script src="/static/node_modules/jquery-address/src/jquery.address.js"></script>
+<script src="/static/node_modules/lodash/lodash.min.js"></script>
+<script src="/static/node_modules/semantic-ui-less/semantic.js"></script>
+<script src="/static/node_modules/simplemde/dist/simplemde.min.js"></script>
+<script src="/static/node_modules/ace-builds/src-noconflict/ace.js"></script>
+<script src="/static/node_modules/ace-builds/src-noconflict/ext-language_tools.js"></script>
+<script src="/static/node_modules/underscore/underscore.js"></script>
+<script src="/static/node_modules/semantic-ui-calendar/dist/calendar.min.js"></script>
+<script src="/static/js/lang-detector.js?v=1620609533"></script>
+<script src="/static/js/markdown.js?v=1620609533"></script>
+<script src="/static/js/longpoll.js?v=1620609533"></script>
+<script src="/static/js/input.file.js?v=1620609533"></script>
+<script src="/static/js/app.js?v=1620609533"></script>
+<script src="/static/js/post.js?v=1620609533"></script>
+<script src="/static/js/submit.js?v=1620609533"></script>
+
+  <script src="/static/js/countdown.js?v=20170825"></script>
+  
+  
+
+
+</body>
+</html>

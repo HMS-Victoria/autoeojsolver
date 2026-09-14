@@ -1,0 +1,67 @@
+============================================================
+  1. 竞赛列表页
+============================================================
+  [1021] 2026春肖宇老师班程序设计能力实训第2次考试
+  [1022] 2026春陈曦班 程序设计能力实训第二次机考
+  [1018] 2026年春季博士入学机试
+  [1017] 2026春鲍钰老师班程序设计能力实训第2次考试
+  [1014] 智勇冲刺：微算法挑战赛
+  [1010] 2026春陈曦班 程序设计能力实训第一次机考（放弃）
+  [1011] 2026春鲍钰老师班程序设计能力实训第1次考试
+  [1012] 2026春肖宇老师班程序设计能力实训第1次考试
+  [1013] 2026春陈曦班 程序设计能力实训第一次机考
+  [1008] 开院环境模拟测
+  [1000] 2026 ECNU 团体程序设计天梯赛选拔赛 #3
+  [998] 2026 ECNU 团体程序设计天梯赛选拔赛 #2
+  [999] 2026 ECNU 团体程序设计天梯赛选拔赛 #1
+  [994] 2025级计双 心理 C语言期末考试
+  [991] 2025级统计《程序设计原理与C语言》期末机考
+  [992] DS心理双学位 - 第二次机考2025
+  [990] 11-30 验题
+  [989] 2025级统计《程序设计原理与C语言》期中机考
+  [986] DS心理双学位 - 第一次机考2025
+  [988] Test 25-11-19
+  [985] 2025级计双 心理 C语言期中考试
+  [867] Contest #867
+  [983] 2025acm招新
+  [984] Contest #984
+  [968] 25 级新生测试 #1
+  [964] 2024级编程综合实践课第三次练习
+  [963] 2024级编程综合实践课第二次练习
+  [962] 2024级编程综合实践课第一次练习
+  [958] 艺高信息竞赛训练第二期期末测试
+  [957] 2025春鲍钰老师班程序设计能力实训第三次考试
+
+  共 30 场比赛
+
+============================================================
+  2. 比赛详情: [867] Contest #867
+============================================================
+  导航Tab: [('首页', '/'), ('比赛', '/contest/'), ('题目集', '/problem/list/'), ('作业', '/contest/gym/'), ('首页', '/'), ('比赛', '/contest/'), ('题目集', '/problem/'), ('作业', '/contest/gym/'), ('仪表盘', '/contest/867/'), ('首页', '/'), ('反馈', '/feedback/'), ('Polygon', '/polygon/'), ('Wiki', '/wiki/index.php?title=Main_Page'), ('Github', 'https://github.com/ultmaster/eoj3'), ('eJudge', 'https://github.com/ultmaster/ejudge')]
+
+  [problems/] Status=404, Len=3551, URL=https://acm.ecnu.edu.cn/contest/867/problems/
+
+  [problem/] Status=404, Len=3551, URL=https://acm.ecnu.edu.cn/contest/867/problem/
+
+  [status/] Status=403, Len=3736, URL=https://acm.ecnu.edu.cn/contest/867/status/
+
+  [submissions/] Status=404, Len=3551, URL=https://acm.ecnu.edu.cn/contest/867/submissions/
+
+============================================================
+  2. 比赛详情: [1000] 天梯赛
+============================================================
+  导航Tab: [('首页', '/'), ('比赛', '/contest/'), ('题目集', '/problem/list/'), ('作业', '/contest/gym/'), ('首页', '/'), ('比赛', '/contest/'), ('题目集', '/problem/'), ('作业', '/contest/gym/'), ('仪表盘', '/contest/1000/'), ('所有提交', '/contest/1000/status/'), ('榜单', '/contest/1000/standings/'), ('首页', '/'), ('反馈', '/feedback/'), ('Polygon', '/polygon/'), ('Wiki', '/wiki/index.php?title=Main_Page'), ('Github', 'https://github.com/ultmaster/eoj3'), ('eJudge', 'https://github.com/ultmaster/ejudge')]
+
+  [problems/] Status=404, Len=3551, URL=https://acm.ecnu.edu.cn/contest/1000/problems/
+
+  [problem/] Status=404, Len=3551, URL=https://acm.ecnu.edu.cn/contest/1000/problem/
+
+  [status/] Status=403, Len=3736, URL=https://acm.ecnu.edu.cn/contest/1000/status/
+
+  [submissions/] Status=404, Len=3551, URL=https://acm.ecnu.edu.cn/contest/1000/submissions/
+
+============================================================
+  3. 检查是否需要登录
+============================================================
+  /contest/1000/problems/ -> https://acm.ecnu.edu.cn/contest/1000/problems/, Status=404
+  /contest/867/problems/ -> https://acm.ecnu.edu.cn/contest/867/problems/, Status=404

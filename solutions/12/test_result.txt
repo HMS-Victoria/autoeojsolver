@@ -1,0 +1,43 @@
+## 本地测试结果
+
+测试时间: 2026-05-26 15:53:55
+
+- 编译: 通过
+- 样例 1: 失败
+  ```
+  Expected:
+Case 1: YES
+Case 2: NO
+Case 3: YES
+
+Got:
+Case 1: YES
+Case 2: YES
+Case 3: YES
+  ```
+- 编译: 通过
+- 样例 1: 失败
+  ```
+  Expected:
+Case 1: YES
+Case 2: NO
+Case 3: YES
+
+Got:
+Case 1: YES
+Case 2: YES
+Case 3: YES
+  ```
+- 编译: 通过
+- 样例 1: 失败
+  ```
+  Expected:
+Case 1: YES
+Case 2: NO
+Case 3: YES
+
+Got:
+Case 1: YES
+Case 2: YES
+Case 3: YES
+  ```

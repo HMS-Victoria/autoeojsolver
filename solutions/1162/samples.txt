@@ -1,0 +1,26 @@
+=== Sample 1 Input ===
+3
+10
+abc 123 de fg hi, jkl mn "o p" qq rs t uvwx yz.
+10
+a bb c d dddd e f ghhh ijkl m nop
+20
+abc
+=== Sample 1 Output ===
+case #0:
+abc⌂123⌂de
+fg⌂hi,⌂jkl
+mn⌂⌂"o⌂⌂p"
+qq⌂⌂rs⌂⌂⌂t
+uvwx⌂yz.
+case #1:
+a⌂bb⌂⌂c⌂⌂d
+dddd⌂⌂e⌂⌂f
+ghhh⌂⌂ijkl
+m⌂nop
+case #2:
+abc
+
+
+
+注：其中⌂表示输出的空格

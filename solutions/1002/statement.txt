@@ -1,0 +1,40 @@
+# 1002. IP Address
+来源: https://acm.ecnu.edu.cn/problem/1002/
+
+Suppose you are reading byte streams from any device, representing IP addresses. Your task is to convert a 32 characters long sequence of
+1
+s and
+0
+s (bits) to a dotted decimal format. A dotted decimal format for an IP address is form by grouping 8 bits at a time and converting the binary representation to decimal representation. Any 8 bits is a valid part of an IP address.
+To convert binary numbers to decimal numbers remember that both are positional numerical systems, where the first 8 positions of the binary systems are:
+$2^7$
+$2^6$
+$2^5$
+$2^4$
+$2^3$
+$2^2$
+$2^1$
+$2^0$
+$128$
+$64$
+$32$
+$16$
+$8$
+$4$
+$2$
+$1$
+
+## 样例
+
+### 样例 1
+输入:
+4
+00000000000000000000000000000000
+00000011100000001111111111111111
+11001011100001001110010110000000
+01010000000100000000000000000001
+输出:
+0.0.0.0
+3.128.255.255
+203.132.229.128
+80.16.0.1

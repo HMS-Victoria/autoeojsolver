@@ -1,0 +1,31 @@
+# （题目已弃用）
+来源: https://acm.ecnu.edu.cn/contest/43/problem/1169/
+
+题目已弃用
+这道题由于缺少明确的题面指引，已经被弃用，它不应该再被作为作业或考试
+如果需要考察校验字符串是否满足给定的规则，可以使用 #3591 - GPS数据处理
+jxtxzzw的博客
+有很多很好的文章，也有数据结构的完整代码和一些作业的报告，所以每天都有很(mei)多(you)同学会访问，也(mei)有(you)同学会留言互动。
+留言的时候，可以留下自己的邮箱。
+jxtxzzw已经收到很多留言的邮箱地址，但是很明显，很多邮箱都是不合法的。
+例如
+jxtxzzw@126.com
+jxtxzzw@jxtxzzw.com
+a.b@c_d
+只有前面2个邮箱是合法的，第3个邮箱地址是非法的。
+现在jxtxzzw想要知道，这么多的邮箱里面，到底有多少个游戏地址是合法的，这些邮箱地址是什么。
+
+## 样例
+
+### 样例 1
+输入:
+jxtxzzw@126.com
+not_valid@email_address
+jxtxzzw@jxtxzzw.com
+jx@tx.zzw
+can not pass validation
+hello.@world
+输出:
+jxtxzzw@126.com
+jxtxzzw@jxtxzzw.com
+jx@tx.zzw

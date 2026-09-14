@@ -1,0 +1,8 @@
+=== Sample 1 Input ===
+( V | V ) & F & ( F| V)
+!V | V & V & !F & (F | V ) & (!F | F | !V & V)
+(F&F|V|!V&!F&!(F|F&V))
+=== Sample 1 Output ===
+Expression 1: F
+Expression 2: V
+Expression 3: V

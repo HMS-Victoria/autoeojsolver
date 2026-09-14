@@ -1,0 +1,11 @@
+=== Sample 1 Input ===
+jxtxzzw@126.com
+not_valid@email_address
+jxtxzzw@jxtxzzw.com
+jx@tx.zzw
+can not pass validation
+hello.@world
+=== Sample 1 Output ===
+jxtxzzw@126.com
+jxtxzzw@jxtxzzw.com
+jx@tx.zzw

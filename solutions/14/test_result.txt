@@ -1,0 +1,18 @@
+## 本地测试结果
+
+测试时间: 2026-05-26 15:57:14
+
+- 编译: 失败
+  ```
+  D:\desktop\goodbyeworld\submit_14.cpp: In function 'ULL getSubHash(const std::vector<long long unsigned int>&, int, int)':
+D:\desktop\goodbyeworld\submit_14.cpp:27:28: error: 'pow' was not declared in this scope
+     return h[r+1] - h[l] * pow(BASE, r-l+1);
+                            ^~~
+D:\desktop\goodbyeworld\submit_14.cpp:27:28: note: suggested alternative: 'putw'
+     return h[r+1] - h[l] * pow(BASE, r-l+1);
+                            ^~~
+                            putw
+
+  ```
+- 编译: 通过
+- 样例 1: 通过
