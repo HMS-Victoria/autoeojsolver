@@ -3,24 +3,25 @@
   "thread": "01a0beb8-2cd0-7293-b6c4-983a135de11f",
   "source_base": "698a65025cb561823adea662d4194e0cde4c3e4c",
   "version": "4.0.1",
-  "release_state": "publication-authorized-2026-09-21",
+  "release_state": "published-prerelease",
   "platform": "Microsoft Windows NT 10.0.26200.0",
   "available_vm_count": 0,
   "windows_sandbox_installed": false,
   "remote_release_count_at_start": 0,
   "real_site_submission_performed": false,
-  "status": "local-delivery-completed-clean-machine-deferred-by-user",
+  "status": "published-prerelease-clean-machine-deferred-by-user",
   "tests_passed": 215,
-  "source_commit_created": false,
+  "source_commit_created": true,
   "pending": [
     "clean Windows machine acceptance (explicitly deferred by user)",
-    "visible GUI and real service manual acceptance",
-    "publication authorization and public download verification"
+    "visible GUI and real service manual acceptance"
   ],
   "toolchain": "MSYS2 UCRT GCC 16.2.0-3 / MinGW-w64 14",
   "toolchain_packages": 17,
   "toolchain_source_archives": 15,
   "source_items_verified": 74,
   "clean_machine_deferral": "User: 没有现成环境，保留该验收待办",
-  "gui_zip_sha256": "ce0d24e8d84bd0a20359ab434a3247c3dca530862384b088d188741303ffb988"
+  "gui_zip_sha256": "ce0d24e8d84bd0a20359ab434a3247c3dca530862384b088d188741303ffb988",
+  "source_commit": "0103ba2cba6e269528093aa4225901690b010944",
+  "release_url": "https://github.com/HMS-Victoria/autoeojsolver/releases/tag/v4.0.1"
 }

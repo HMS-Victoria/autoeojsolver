@@ -1,0 +1,17 @@
+{
+  "release_url": "https://github.com/HMS-Victoria/autoeojsolver/releases/tag/v4.0.1",
+  "tag": "v4.0.1",
+  "source_commit": "0103ba2cba6e269528093aa4225901690b010944",
+  "published_at": "2026-09-21T02:04:36Z",
+  "prerelease": true,
+  "asset_count": 9,
+  "github_asset_hashes": "all matched local SHA256",
+  "anonymous_public_download_hashes": "all 9 matched",
+  "downloaded_gui_zip_crc": "pass",
+  "downloaded_gui_extracted_exe_selftest": "pass",
+  "runtime_source_changed_since_215_tests": false,
+  "clean_machine_acceptance": "explicitly deferred by user",
+  "manual_gui_and_real_services": "pending",
+  "real_submission_performed": false,
+  "notes": "Only release documentation was updated in the GUI ZIP. Runtime/source manifest remains identical to the tested build. The published assets are immutable for this task."
+}

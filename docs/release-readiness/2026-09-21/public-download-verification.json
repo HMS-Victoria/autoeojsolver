@@ -1,0 +1,69 @@
+{
+  "release_url": "https://github.com/HMS-Victoria/autoeojsolver/releases/tag/v4.0.1",
+  "authenticated_download": false,
+  "assets": [
+    {
+      "name": "EOJSolver-4.0.1-source.zip",
+      "url": "https://github.com/HMS-Victoria/autoeojsolver/releases/download/v4.0.1/EOJSolver-4.0.1-source.zip",
+      "bytes": 654569,
+      "sha256": "d7e4c0dfd3f9674e9e4c40d9a079f99302008c9af04d4ad51ef83410934051f3",
+      "result": "pass"
+    },
+    {
+      "name": "EOJSolver-4.0.1-toolchain-sources.zip",
+      "url": "https://github.com/HMS-Victoria/autoeojsolver/releases/download/v4.0.1/EOJSolver-4.0.1-toolchain-sources.zip",
+      "bytes": 336502654,
+      "sha256": "c12516db14528c524130cadb360a14877e70773b9a2920ec14618729f617bc67",
+      "result": "pass"
+    },
+    {
+      "name": "EOJSolver-4.0.1-windows-x64-candidate.zip",
+      "url": "https://github.com/HMS-Victoria/autoeojsolver/releases/download/v4.0.1/EOJSolver-4.0.1-windows-x64-candidate.zip",
+      "bytes": 320321069,
+      "sha256": "ce0d24e8d84bd0a20359ab434a3247c3dca530862384b088d188741303ffb988",
+      "result": "pass"
+    },
+    {
+      "name": "RELEASE_NOTES.md",
+      "url": "https://github.com/HMS-Victoria/autoeojsolver/releases/download/v4.0.1/RELEASE_NOTES.md",
+      "bytes": 1839,
+      "sha256": "7fb67464e4f67c248afe81cd11ed2267d08064a82e5f8d04aee11b2c78d3c8ec",
+      "result": "pass"
+    },
+    {
+      "name": "SHA256SUMS",
+      "url": "https://github.com/HMS-Victoria/autoeojsolver/releases/download/v4.0.1/SHA256SUMS",
+      "bytes": 726,
+      "sha256": "7261c02f8b8d3256013d9a3679c5485d5b8cf390febd2cb54f869618652a19cd",
+      "result": "pass"
+    },
+    {
+      "name": "SOURCE_MANIFEST.json",
+      "url": "https://github.com/HMS-Victoria/autoeojsolver/releases/download/v4.0.1/SOURCE_MANIFEST.json",
+      "bytes": 1754,
+      "sha256": "a4d8b68d56496c6d2025308d5ff0e662a980cc15b90ae0d9f6ffafb28d7d09ab",
+      "result": "pass"
+    },
+    {
+      "name": "THIRD_PARTY.md",
+      "url": "https://github.com/HMS-Victoria/autoeojsolver/releases/download/v4.0.1/THIRD_PARTY.md",
+      "bytes": 1846,
+      "sha256": "30595ced808acb83256c03980c8e7ab3cb86b6162fdd916ee2eeeef5e4fc32ff",
+      "result": "pass"
+    },
+    {
+      "name": "USER_GUIDE.md",
+      "url": "https://github.com/HMS-Victoria/autoeojsolver/releases/download/v4.0.1/USER_GUIDE.md",
+      "bytes": 2375,
+      "sha256": "44446a0f7dae24a7faadd798603d5669a98e5c4365bb40ae08f416820cf64863",
+      "result": "pass"
+    },
+    {
+      "name": "VERIFICATION.md",
+      "url": "https://github.com/HMS-Victoria/autoeojsolver/releases/download/v4.0.1/VERIFICATION.md",
+      "bytes": 4415,
+      "sha256": "dca867af22fed02f489b44f1f863b94aa2e2eeb396bad0e65e23ef4b11d9f66f",
+      "result": "pass"
+    }
+  ]
+}
