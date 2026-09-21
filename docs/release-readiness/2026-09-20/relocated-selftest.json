@@ -1,0 +1,27 @@
+{
+  "frozen": true,
+  "ok": true,
+  "compiler": {
+    "ok": true,
+    "compiler": "D:\\desktop\\obj_ai\\obj_eoj_copy\\autoeojsolver\\build\\publication acceptance 2026-09-21\\EOJSolver\\toolchain\\ucrt64\\bin\\g++.exe",
+    "error": "",
+    "details": "## 本地测试结果\n\n测试时间: 2026-09-21 10:00:10\n\n编译器: D:\\desktop\\obj_ai\\obj_eoj_copy\\autoeojsolver\\build\\publication acceptance 2026-09-21\\EOJSolver\\toolchain\\ucrt64\\bin\\g++.exe (-std=c++17)\n\n- 编译: 通过 (7.2s)\n- 样例 1: 通过 (0.21s)\n- 样例 2: 通过 (0.04s)"
+  },
+  "pipeline": {
+    "local_only": true,
+    "simulated_submit": true,
+    "skip_test_blocked": true,
+    "missing_compiler_blocked": true,
+    "model_failure": true,
+    "site_failure": true
+  },
+  "dependencies": true,
+  "gui": {
+    "constructed": true,
+    "submit_default": false
+  },
+  "platform": "Windows-11-10.0.26200-SP0",
+  "process_exit": 0,
+  "isolated_path": "C:\\WINDOWS\\System32;C:\\WINDOWS",
+  "acceptance_level": "Host process isolation; NOT a clean VM or manual GUI acceptance"
+}

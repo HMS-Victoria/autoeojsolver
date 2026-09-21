@@ -1,3 +1,5 @@
+> **2026-09-20 / 4.0.1 portable candidate:** Windows GUI packaging and safety fixes are recorded in [release readiness](docs/release-readiness/2026-09-20/HANDOFF.md). GUI and CLI now default to no submission; use `--submit` explicitly for CLI submission. Unverified code is blocked. The package includes private MSYS2 GCC and its matching source companion. Clean-machine and visible GUI acceptance remain pending; the user approved deferring clean-machine acceptance. The Windows build is distributed as a prerelease with these acceptance limitations.
+
 <div align="center">
 
 # EOJ Auto Solver
@@ -5,9 +7,9 @@
 **一个端到端自动做题系统：登录评测机 → 抓题 → 大模型生成 C++ → 本地编译测试 → 闭环重写 → 提交判题 → 归档中文题解**
 
 [![Python](https://img.shields.io/badge/Python-3.8%2B-3776ab?logo=python&logoColor=white)](https://www.python.org/)
-[![Tests](https://img.shields.io/badge/tests-206%20passed-success)](tests/)
+[![Tests](https://img.shields.io/badge/tests-215%20passed-success)](tests/)
 [![Offline](https://img.shields.io/badge/test%20suite-100%25%20offline-informational)](tests/)
-[![Version](https://img.shields.io/badge/eojkit-v4.0.0-blue)](eojkit/__init__.py)
+[![Version](https://img.shields.io/badge/eojkit-v4.0.1-blue)](eojkit/__init__.py)
 [![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 
 [English](#english) · [中文](#中文) · [架构](#architecture--架构) · [快速开始](#quick-start--快速开始)

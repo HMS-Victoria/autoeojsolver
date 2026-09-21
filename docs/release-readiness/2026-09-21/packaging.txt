@@ -1,0 +1,2 @@
+Portable process checks passed: D:\desktop\obj_ai\obj_eoj_copy\autoeojsolver\docs\release-readiness\2026-09-20\relocated-selftest.json
+Verified candidate ZIP: D:\desktop\obj_ai\obj_eoj_copy\autoeojsolver\release\EOJSolver-4.0.1-windows-x64-candidate.zip

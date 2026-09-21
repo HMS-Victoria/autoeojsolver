@@ -39,8 +39,10 @@ from eojkit.config import PROVIDER_PRESETS, SOLUTIONS_DIRNAME, get_settings
 # v4.0：配置文件迁到 eoj_config.json（含旧 eoj_gui_config.json 自动迁移），
 # 并且**不再在源码里硬编码任何账号/密码/API Key** —— 请用环境变量
 # （EOJ_USERNAME / EOJ_PASSWORD / DEEPSEEK_API_KEY）或直接在界面填写。
-CONFIG_FILE = os.path.join(BASE_DIR, 'eoj_config.json')
-LEGACY_CONFIG_FILE = os.path.join(BASE_DIR, 'eoj_gui_config.json')
+from eojkit.paths import DATA_DIR
+
+CONFIG_FILE = str(DATA_DIR / 'eoj_config.json')
+LEGACY_CONFIG_FILE = str(DATA_DIR / 'eoj_gui_config.json')
 
 #: 模型下拉框兜底候选（真实清单由 GET /models 探测，见 refresh_models()）
 DEFAULT_MODELS = ['deepseek-v4-pro', 'deepseek-flash']
@@ -49,7 +51,7 @@ DEFAULT_CONFIG = {
     'username': '',
     'password': '',
     'api_key': '',
-    'solutions_dir': os.path.join(BASE_DIR, SOLUTIONS_DIRNAME),
+    'solutions_dir': str(DATA_DIR / SOLUTIONS_DIRNAME),
     'remember': True,
     'model': DEFAULT_MODELS[0],
     'base_url': PROVIDER_PRESETS['deepseek']['base_url'],
@@ -93,7 +95,7 @@ class TextRedirector(io.StringIO):
 class EOJGUI:
     def __init__(self, root):
         self.root = root
-        self.root.title("EOJ 自动刷题系统 v3.1 — Designed by HMS_Victorious")
+        self.root.title("EOJ 解题助手 v4.0.1 — Designed by HMS_Victorious")
         self.root.geometry("1000x760")
         self.root.minsize(850, 650)
 
@@ -234,6 +236,20 @@ class EOJGUI:
         except Exception as e:
             print(f"[WARN] 保存配置失败: {e}")
 
+    def show_setup(self):
+        messagebox.showinfo("首次设置", "1. 填写账号、密码。\n2. 选择模型服务、填写 Key 和模型名，点击测试 API（会联网）。\n3. 点击下方确定后进行离线环境自检。\n4. 默认只生成并本地测试；需要提交时请主动勾选提交。\n\n配置与题解保存于：" + str(DATA_DIR) + "\n勾选记住配置会在本机明文保存凭据，请勿分享该目录。")
+        from eojkit.portable import local_check
+        self.set_status("正在自检编译器…")
+        def worker():
+            try:
+                report = local_check()
+                text = "本地编译和样例自检通过；账号与模型连接需另行测试。" if report["ok"] else "本地自检未通过：" + report.get("error", "请重新解压完整工具链")
+            except Exception:
+                text = "无法完成自检，请检查解压目录和写入权限。"
+            self.root.after(0, lambda: messagebox.showinfo("环境自检", text))
+            self.root.after(0, lambda: self.set_status(text))
+        threading.Thread(target=worker, daemon=True).start()
+
     def _enqueue_log(self, text):
         """引擎日志出口：投递到 GUI 日志队列。
 
@@ -333,6 +349,7 @@ class EOJGUI:
         self.var_remember = BooleanVar(value=self.config.get('remember', True))
         ttk.Checkbutton(btn_row, text="记住配置", variable=self.var_remember).pack(side=RIGHT)
 
+        ttk.Button(btn_row, text="首次设置 / 自检", command=self.show_setup).pack(side=LEFT, padx=6)
         cfg_frame.columnconfigure(1, weight=1)
         cfg_frame.columnconfigure(5, weight=1)
 
@@ -409,7 +426,7 @@ class EOJGUI:
 
         self.var_compile = BooleanVar(value=True)
         self.var_analysis = BooleanVar(value=True)
-        self.var_submit = BooleanVar(value=True)
+        self.var_submit = BooleanVar(value=False)
 
         ttk.Checkbutton(opt_frame, text="本地编译测试", variable=self.var_compile).pack(side=LEFT, padx=(0, 10))
         ttk.Checkbutton(opt_frame, text="生成刷题笔记", variable=self.var_analysis).pack(side=LEFT, padx=(0, 10))
@@ -1660,7 +1677,8 @@ class EOJGUI:
                             solver=solver,
                             tester=current_tester,
                             archiver=archiver,
-                            contest_id=contest_id
+                            contest_id=contest_id,
+                            skip_test=not do_compile,
                         )
                         if result == 'SUCCESS':
                             success += 1
@@ -1784,6 +1802,8 @@ class CaptchaDialog(Toplevel):
 def main():
     root = Tk()
     app = EOJGUI(root)
+    if not os.path.exists(CONFIG_FILE):
+        root.after(400, app.show_setup)
     root.mainloop()
 
 

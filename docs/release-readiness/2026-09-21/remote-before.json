@@ -1,0 +1,13 @@
+{
+  "login": "HMS-Victoria",
+  "repository": "HMS-Victoria/autoeojsolver",
+  "default_branch": "main",
+  "permissions": {
+    "admin": true,
+    "maintain": true,
+    "push": true,
+    "triage": true,
+    "pull": true
+  },
+  "releases": []
+}

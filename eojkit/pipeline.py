@@ -50,7 +50,8 @@ __all__ = [
 
 #: 状态码 → 中文说明
 STATUS_TEXT = {
-    "SUCCESS": "已提交",
+    "SUCCESS": "处理完成",
+    "UNVERIFIED": "代码已生成，但未完成本地验证；未提交",
     "FAIL_LOGIN": "登录失败",
     "FAIL_FETCH": "抓题失败",
     "FAIL_CODE": "AI 生成代码失败",
@@ -85,6 +86,8 @@ class SolveOutcome:
 
     @property
     def text(self) -> str:
+        if self.status == "SUCCESS":
+            return "已提交" if self.submitted else "本地验证通过，未提交"
         return STATUS_TEXT.get(self.status, self.status)
 
     def __bool__(self) -> bool:
@@ -246,7 +249,7 @@ def solve(
         if tester is None:
             tester = CodeTester()
         if not tester.gpp:
-            log_warn("无可用 g++，跳过本地编译测试（代码仍会提交）")
+            log_warn("无可用编译器，无法本地验证，禁止提交")
         else:
             for attempt in range(1, retries + 1):
                 outcome.attempts = attempt
@@ -280,6 +283,9 @@ def solve(
                     tester.cleanup(problem_id)
                     continue
 
+                if not problem_info.get("samples"):
+                    log_warn("编译成功，但题目没有样例，未验证且不会提交")
+                    break
                 tests_passed = tester.test_with_samples(build.exe_path, problem_info.get("samples") or [])
                 if archiver:
                     archiver.save_test_result(problem_id, tester.get_test_result_text())
@@ -309,6 +315,18 @@ def solve(
                 tester.cleanup(problem_id)
 
     outcome.tests_passed = tests_passed
+
+    if not tests_passed:
+        outcome.status = "UNVERIFIED"
+        outcome.error = "未完成本地编译和样例测试，已阻止提交"
+        log_warn(outcome.error)
+        if archiver:
+            archiver.meta.local_tests = "未验证；未提交"
+            archiver.save_test_result(problem_id, outcome.error)
+            archiver.save_meta(problem_id)
+        if tester:
+            tester.cleanup(problem_id)
+        return outcome
 
     # ---------------- 提交 ----------------
     if skip_submit:

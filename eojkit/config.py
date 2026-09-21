@@ -49,7 +49,9 @@ __all__ = [
 # 路径常量
 # --------------------------------------------------------------------------
 
-PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+from .paths import DATA_DIR
+
+PROJECT_ROOT = str(DATA_DIR)
 
 CONFIG_FILENAME = "eoj_config.json"
 LEGACY_CONFIG_FILENAMES = ("eoj_gui_config.json",)
@@ -273,6 +275,7 @@ def save_config_file(data: Dict[str, Any], root: Optional[str] = None) -> str:
     """原子写入 JSON 配置文件。"""
     root = root or PROJECT_ROOT
     path = config_path(root)
+    os.makedirs(root, exist_ok=True)
     tmp = path + ".tmp"
     with open(tmp, "w", encoding="utf-8") as fh:
         json.dump(data, fh, ensure_ascii=False, indent=2)

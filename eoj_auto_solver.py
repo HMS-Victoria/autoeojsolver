@@ -321,7 +321,8 @@ def doctor() -> int:
     if find_gpp():
         log_ok(f"g++: {_SETTINGS.runtime.gpp_path}")
     else:
-        log_warn("未找到 g++，本地编译测试将被跳过")
+        log_fail("未找到编译器，无法验证，禁止提交")
+        issues += 1
 
     log_line("\n[大模型接口]")
     if not settings.llm.api_key:
@@ -396,7 +397,9 @@ def build_arg_parser():
     parser.add_argument("--url", type=str, help="题目完整 URL")
     parser.add_argument("--range", type=str, help="题目范围，如 1001-1020")
     parser.add_argument("--all", action="store_true", help="所有已有题目（用于 --archive）或竞赛全部题目")
-    parser.add_argument("--no-submit", action="store_true", help="不提交，仅生成并测试代码")
+    submit = parser.add_mutually_exclusive_group()
+    submit.add_argument("--no-submit", dest="no_submit", action="store_true", default=True, help="不提交，仅生成并测试代码（默认）")
+    submit.add_argument("--submit", dest="no_submit", action="store_false", help="明确允许在本地验证通过后提交")
     parser.add_argument("--no-login", action="store_true", help="不登录，仅获取题目和生成代码")
     parser.add_argument("--no-analysis", action="store_true", help="跳过生成中文刷题笔记")
     parser.add_argument("--no-test", action="store_true", help="跳过本地编译测试")

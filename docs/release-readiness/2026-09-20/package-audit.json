@@ -1,0 +1,10 @@
+{
+  "asset": "EOJSolver-4.0.1-windows-x64-candidate.zip",
+  "bytes": 320321069,
+  "sha256": "ce0d24e8d84bd0a20359ab434a3247c3dca530862384b088d188741303ffb988",
+  "zip_members": 8383,
+  "zip_crc_check": "pass",
+  "toolchain_files_verified": 6380,
+  "excluded_user_data_check": "pass",
+  "relocated_selftest": "pass"
+}

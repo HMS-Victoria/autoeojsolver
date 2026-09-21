@@ -237,6 +237,7 @@ def test_pipeline_skip_submit(fake_world, tmp_path):
 
 
 def test_pipeline_skip_test(fake_world, tmp_path):
+    submissions_before = len(SUBMISSIONS)
     base, _routes = fake_world
     client, solver, tester, archiver = _components(base, tmp_path)
     outcome = solve(
@@ -248,7 +249,9 @@ def test_pipeline_skip_test(fake_world, tmp_path):
         skip_login=True,
         skip_test=True,
     )
-    assert outcome.ok
+    assert outcome.status == "UNVERIFIED"
+    assert not outcome.submitted
+    assert len(SUBMISSIONS) == submissions_before
     assert outcome.tests_passed is False
 
 

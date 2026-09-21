@@ -95,13 +95,16 @@ class CodeTester:
         std: str = "c++17",
     ):
         runtime = get_settings().runtime
-        self.gpp = gpp or runtime.gpp_path or find_gpp()
+        self.gpp = gpp or find_gpp(extra_paths=(runtime.gpp_path,) if runtime.gpp_path else ())
         # 编译中间产物统一放到临时目录，避免像旧版一样把 submit_*.cpp/exe
         # 丢在项目根目录
         self.workdir = workdir or os.path.join(TEMP_DIR, "build")
         self.compile_timeout = compile_timeout or runtime.compile_timeout
         self.run_timeout = run_timeout or runtime.run_timeout
         self.std = std
+        self.process_env = os.environ.copy()
+        if self.gpp:
+            self.process_env["PATH"] = os.path.dirname(os.path.abspath(self.gpp)) + os.pathsep + self.process_env.get("PATH", "")
         self.compiles: List[CompileResult] = []
         self._test_results: List[TestResult] = []
         os.makedirs(self.workdir, exist_ok=True)
@@ -142,7 +145,8 @@ class CodeTester:
         started = time.time()
         try:
             proc = subprocess.run(
-                command, capture_output=True, text=True, timeout=self.compile_timeout
+                command, capture_output=True, text=True, timeout=self.compile_timeout,
+                env=self.process_env, creationflags=getattr(subprocess, "CREATE_NO_WINDOW", 0)
             )
         except subprocess.TimeoutExpired:
             result = CompileResult(
@@ -170,6 +174,8 @@ class CodeTester:
         elapsed = time.time() - started
         if proc.returncode != 0:
             message = _clip(proc.stderr or proc.stdout or "(无输出)", 800)
+            if os.name == "nt" and not (str(self.gpp) + self.workdir).isascii():
+                message = "编译器不支持当前中文路径。请将完整程序移至纯英文目录（例如 D:/EOJSolver），并使用英文路径的临时目录后重试。\n" + message
             result = CompileResult(
                 status="COMPILE_ERROR",
                 message=message,
@@ -244,6 +250,7 @@ class CodeTester:
                 text=True,
                 timeout=self.run_timeout,
                 cwd=self.workdir,
+                env=self.process_env, creationflags=getattr(subprocess, "CREATE_NO_WINDOW", 0),
             )
         except subprocess.TimeoutExpired:
             return TestResult(
@@ -264,7 +271,7 @@ class CodeTester:
 
         elapsed = time.time() - started
         actual = (proc.stdout or "")[:MAX_CAPTURE]
-        if _normalize(expected) == _normalize(actual):
+        if proc.returncode == 0 and _normalize(expected) == _normalize(actual):
             return TestResult(index=index, status="PASS", expected=expected, actual=actual, elapsed=elapsed)
 
         stderr = (proc.stderr or "")[:400]

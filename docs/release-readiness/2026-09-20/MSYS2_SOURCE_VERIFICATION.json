@@ -1,0 +1,452 @@
+{
+  "source_archives": 15,
+  "source_members_checked": 74,
+  "checks": [
+    {
+      "package": "mingw-w64-gcc",
+      "source": "https://ftp.gnu.org/gnu/gcc/gcc-16.2.0/gcc-16.2.0.tar.xz",
+      "verification": "sha256 pass",
+      "actual_hash": "e6738e29597f733270731aa90600f37ffdc045079dfc27ec7e8192cc81085c3e"
+    },
+    {
+      "package": "mingw-w64-gcc",
+      "source": "https://ftp.gnu.org/gnu/gcc/gcc-16.2.0/gcc-16.2.0.tar.xz.sig",
+      "verification": "presence only (upstream SKIP)",
+      "actual_hash": "43d73202dcede15d31001c6ba0d28723014ef57e4dc815631772daadbe23bcd2"
+    },
+    {
+      "package": "mingw-w64-gcc",
+      "source": "gdbinit",
+      "verification": "sha256 pass",
+      "actual_hash": "bce81824fc89e5e62cca350de4c17a27e27a18a1a1ad5ca3492aec1fc5af3234"
+    },
+    {
+      "package": "mingw-w64-gcc",
+      "source": "0002-i386-Keep-SEH-enabled-for-Win64-sysv_abi-functions.patch",
+      "verification": "sha256 pass",
+      "actual_hash": "fdf4e90a56fc195a8f9a969af39335f158a29f29d42d33c00d908fc47cf5ad24"
+    },
+    {
+      "package": "mingw-w64-gcc",
+      "source": "0003-Windows-Follow-Posix-dir-exists-semantics-more-close.patch",
+      "verification": "sha256 pass",
+      "actual_hash": "3fc35067823f87e48dd3bfd265e7593000dc110fa9ad5f16c81b896765fc897a"
+    },
+    {
+      "package": "mingw-w64-gcc",
+      "source": "0007-Build-EXTRA_GNATTOOLS-for-Ada.patch",
+      "verification": "sha256 pass",
+      "actual_hash": "90d5cb570083f9dea4ac0f0f87e3e8d2230f5052e6f9b946061a20a224a9d195"
+    },
+    {
+      "package": "mingw-w64-gcc",
+      "source": "0008-Prettify-linking-no-undefined.patch",
+      "verification": "sha256 pass",
+      "actual_hash": "8d2d53ae26b777d90189240494de1b895c5efa1ebdcdfbf5774f29fc742499d9"
+    },
+    {
+      "package": "mingw-w64-gcc",
+      "source": "0011-Enable-shared-gnat-implib.patch",
+      "verification": "sha256 pass",
+      "actual_hash": "5ef4148acc4a2b7ed648d4fe75fab5545e84b4b93a12d6ba4e4ea6061dd635fa"
+    },
+    {
+      "package": "mingw-w64-gcc",
+      "source": "0012-Handle-spaces-in-path-for-default-manifest.patch",
+      "verification": "sha256 pass",
+      "actual_hash": "e98805ead7d78ee2a92f237894c4b2b7ddc1688e1b517d8c04f28d440202e40f"
+    },
+    {
+      "package": "mingw-w64-gcc",
+      "source": "0014-gcc-9-branch-clone_function_name_1-Retain-any-stdcall-suffix.patch",
+      "verification": "sha256 pass",
+      "actual_hash": "fd9bdecb2bbc4796bbc9f00b708dac42ef9e3464a06d6d27e5475cee117de5be"
+    },
+    {
+      "package": "mingw-w64-gcc",
+      "source": "0020-libgomp-Don-t-hard-code-MS-printf-attributes.patch",
+      "verification": "sha256 pass",
+      "actual_hash": "ad1f7b5e7afaaec008b7cbd14feea13a10989fa91bda7003af72d457619bb199"
+    },
+    {
+      "package": "mingw-w64-gcc",
+      "source": "0021-bootstrap-gnattools-Pass-target-sysroot-flags-to-boo.patch",
+      "verification": "sha256 pass",
+      "actual_hash": "76455c46eec4df95a80bbf7e5bcd2d165f300976c79c1baf0bf7ed20f000cdd4"
+    },
+    {
+      "package": "mingw-w64-gcc",
+      "source": "0022-mingw-Remove-outdated-mingw-stuff.patch",
+      "verification": "sha256 pass",
+      "actual_hash": "ec05f8f26698dae4e0e0b58189cbf509185ad6d40b4950b33e28b638bf70c7ae"
+    },
+    {
+      "package": "mingw-w64-gcc",
+      "source": "0023-Ada-Don-t-export-gnat1-s-symbols-on-PE-hosts.patch",
+      "verification": "sha256 pass",
+      "actual_hash": "395dd4df29c295f917aa4a136a0aa72af34eee6320ecc2d92ee717397578398d"
+    },
+    {
+      "package": "mingw-w64-gcc",
+      "source": "0024-libgfortran-Guard-locale-restoration-for-formatted-I0.patch",
+      "verification": "sha256 pass",
+      "actual_hash": "976d14f803a211b19d9bf0169c08d4fde05af5cc18073f2fc8efc9a3cb17890a"
+    },
+    {
+      "package": "mingw-w64-gcc",
+      "source": "0025-libgfortran-Copy-LC_NUMERIC-string-for-formatted-IO.patch",
+      "verification": "sha256 pass",
+      "actual_hash": "f591efc820a2c72aefb83179f7cbd3f4654231b68700486bd04ee32e2db61de5"
+    },
+    {
+      "package": "mingw-w64-gcc",
+      "source": "0140-gcc-diagnostic-color.patch",
+      "verification": "sha256 pass",
+      "actual_hash": "c94004dab1685a6fa9124de86aae742df4136a2e9ff5d5e1ad87ecdc35fbcef4"
+    },
+    {
+      "package": "mingw-w64-gcc",
+      "source": "0200-add-m-no-align-vector-insn-option-for-i386.patch",
+      "verification": "sha256 pass",
+      "actual_hash": "1484911163634f30324827619c873a6267b377abba0df8bbedfd128163c53ea4"
+    },
+    {
+      "package": "mingw-w64-gcc",
+      "source": "2001-fix-building-rust-on-mingw-w64.patch",
+      "verification": "sha256 pass",
+      "actual_hash": "a411f59953553a3d01dd64c79b1acbb91eca092c4cb01bfd26b1c51c3eb798e8"
+    },
+    {
+      "package": "mingw-w64-gcc",
+      "source": "3001-fix-codeview-crashes.patch",
+      "verification": "sha256 pass",
+      "actual_hash": "f21f9ab731e9cab8fd4ca8c289497f859ef7004e6fa0507877dc2559ac2071c3"
+    },
+    {
+      "package": "mingw-w64-binutils",
+      "source": "https://ftp.gnu.org/gnu/binutils/binutils-2.47.tar.bz2",
+      "verification": "sha256 pass",
+      "actual_hash": "3068128c75cda9f898ccb4211d360246e8e195ffcc9dfb655b23ae23a54800e8"
+    },
+    {
+      "package": "mingw-w64-binutils",
+      "source": "https://ftp.gnu.org/gnu/binutils/binutils-2.47.tar.bz2.sig",
+      "verification": "presence only (upstream SKIP)",
+      "actual_hash": "133e31f4eedfe16cd47fa30a15ceef7a953cb8027766028d0a00d5b5a9e14a28"
+    },
+    {
+      "package": "mingw-w64-binutils",
+      "source": "0002-check-for-unusual-file-harder.patch",
+      "verification": "sha256 pass",
+      "actual_hash": "2c99345fc575c3a060d6677537f636c6c4154fac0fde508070f3b6296c1060d4"
+    },
+    {
+      "package": "mingw-w64-binutils",
+      "source": "2001-ld-option-to-move-default-bases-under-4GB.patch",
+      "verification": "sha256 pass",
+      "actual_hash": "9945635f4a67712616202f09cbb66cf70df01be168c2c8054c455bb58bf334dd"
+    },
+    {
+      "package": "mingw-w64-binutils",
+      "source": "2003-Revert-Restore-old-behaviour-of-windres-so-that-opti.patch",
+      "verification": "sha256 pass",
+      "actual_hash": "3e3c53b0751a6389cd50dcbd7f78b52aaa55113414da01d3415592af18809702"
+    },
+    {
+      "package": "mingw-w64-binutils",
+      "source": "2004-ld-Prevent-_tls_used-and-_load_config_used-from-bein.patch",
+      "verification": "sha256 pass",
+      "actual_hash": "5fddd0c6e380955c2d219f173d286bae07ff23ba79afcd15aba6f29ae6dea47d"
+    },
+    {
+      "package": "mingw-w64-binutils",
+      "source": "reproducible-import-libraries.patch",
+      "verification": "sha256 pass",
+      "actual_hash": "a094660ec95996c00b598429843b7869037732146442af567ada9f539bd40480"
+    },
+    {
+      "package": "mingw-w64-binutils",
+      "source": "libiberty-unlink-handle-windows-nul.patch",
+      "verification": "sha256 pass",
+      "actual_hash": "7ccbd418695733c50966068fa9755a6abb156f53af23701d2bc097c63e9e0030"
+    },
+    {
+      "package": "mingw-w64-binutils",
+      "source": "4000-fix-DEBUG_S_INLINEELINES.patch",
+      "verification": "sha256 pass",
+      "actual_hash": "5ed35a728b956ad49a5e196ae59f681666f2754f0a4903b9280a430d7a312ea8"
+    },
+    {
+      "package": "mingw-w64-crt",
+      "source": "mingw-w64::git+https://git.code.sf.net/p/mingw-w64/mingw-w64#commit=6de5d3b4db33c23e404148321ccb4a7bf92ca4fc",
+      "verification": "included Git commit exists",
+      "commit": "6de5d3b4db33c23e404148321ccb4a7bf92ca4fc"
+    },
+    {
+      "package": "mingw-w64-gmp",
+      "source": "https://ftp.gnu.org/gnu/gmp/gmp-6.3.0.tar.xz",
+      "verification": "sha256 pass",
+      "actual_hash": "a3c2b80201b89e68616f4ad30bc66aee4927c3ce50e33929ca819d5c43538898"
+    },
+    {
+      "package": "mingw-w64-gmp",
+      "source": "https://ftp.gnu.org/gnu/gmp/gmp-6.3.0.tar.xz.sig",
+      "verification": "presence only (upstream SKIP)",
+      "actual_hash": "94def8c1a731854de684689126046ec93589147abd4cd0025f12d741d323aa82"
+    },
+    {
+      "package": "mingw-w64-gmp",
+      "source": "do-not-use-dllimport.diff",
+      "verification": "sha256 pass",
+      "actual_hash": "385ab704f82c47f3aecc9141f43c96e7b8de2bf0e654dc457ce0f1a039db2c68"
+    },
+    {
+      "package": "mingw-w64-gmp",
+      "source": "gmp-staticlib.diff",
+      "verification": "sha256 pass",
+      "actual_hash": "7c3cde2634baa2cb1c31404bbfed2d8d7ba33556971ac842a08f2e87667849ab"
+    },
+    {
+      "package": "mingw-w64-headers",
+      "source": "mingw-w64::git+https://git.code.sf.net/p/mingw-w64/mingw-w64#commit=6de5d3b4db33c23e404148321ccb4a7bf92ca4fc",
+      "verification": "included Git commit exists",
+      "commit": "6de5d3b4db33c23e404148321ccb4a7bf92ca4fc"
+    },
+    {
+      "package": "mingw-w64-headers",
+      "source": "0001-remove-ireference-boolean.patch",
+      "verification": "sha256 pass",
+      "actual_hash": "cad48616325b5e70afa4e02424021fc8d54e17dcbf86eae3df990d3500080236"
+    },
+    {
+      "package": "mingw-w64-isl",
+      "source": "https://libisl.sourceforge.io/isl-0.28.tar.xz",
+      "verification": "sha256 pass",
+      "actual_hash": "3dc31b8e1b18329e42d5dfbf84dd55e15c59b61569a2ab246f61497d9592f727"
+    },
+    {
+      "package": "mingw-w64-isl",
+      "source": "isl-0.14.1-no-undefined.patch",
+      "verification": "sha256 pass",
+      "actual_hash": "83655a7202f0a0dcce1782d4b365252bf1ad12a522b7ad82ab578ee5ec46433b"
+    },
+    {
+      "package": "mingw-w64-mpc",
+      "source": "https://ftp.gnu.org/gnu/mpc/mpc-1.4.1.tar.xz",
+      "verification": "sha256 pass",
+      "actual_hash": "91204cd32f164bd3b7c992d4a6a8ce6519511aadab30f78b6982d0bf8d73e931"
+    },
+    {
+      "package": "mingw-w64-mpc",
+      "source": "https://ftp.gnu.org/gnu/mpc/mpc-1.4.1.tar.xz.sig",
+      "verification": "presence only (upstream SKIP)",
+      "actual_hash": "3752a19777570c8c23db295c0b36c447f013338815dc7aec9c38cb6403ddd5bd"
+    },
+    {
+      "package": "mingw-w64-mpfr",
+      "source": "https://ftp.gnu.org/gnu/mpfr/mpfr-4.2.2.tar.xz",
+      "verification": "sha256 pass",
+      "actual_hash": "b67ba0383ef7e8a8563734e2e889ef5ec3c3b898a01d00fa0a6869ad81c6ce01"
+    },
+    {
+      "package": "mingw-w64-mpfr",
+      "source": "https://ftp.gnu.org/gnu/mpfr/mpfr-4.2.2.tar.xz.sig",
+      "verification": "presence only (upstream SKIP)",
+      "actual_hash": "c63aa4c8a9e678b235e6bdeba3d79f0c0d35c355129ef478a5050655e636bfaa"
+    },
+    {
+      "package": "mingw-w64-windows-default-manifest",
+      "source": "genrc.py",
+      "verification": "sha256 pass",
+      "actual_hash": "f2bfbcd92ab28d8671dda5a1485aae150ce5d5faf4395a6a4462cacd2a6fb60a"
+    },
+    {
+      "package": "mingw-w64-winpthreads",
+      "source": "mingw-w64::git+https://git.code.sf.net/p/mingw-w64/mingw-w64#commit=6de5d3b4db33c23e404148321ccb4a7bf92ca4fc",
+      "verification": "included Git commit exists",
+      "commit": "6de5d3b4db33c23e404148321ccb4a7bf92ca4fc"
+    },
+    {
+      "package": "mingw-w64-winpthreads",
+      "source": "0001-Define-__-de-register_frame_info-in-fake-libgcc_s.patch",
+      "verification": "sha256 pass",
+      "actual_hash": "2e779bcc60a1422b23e0cfdb5c0f6851f2382592bb4675d08a6bdef78d5e5c10"
+    },
+    {
+      "package": "mingw-w64-zlib",
+      "source": "https://github.com/madler/zlib/releases/download/v1.3.2/zlib-1.3.2.tar.xz",
+      "verification": "sha256 pass",
+      "actual_hash": "d7a0654783a4da529d1bb793b7ad9c3318020af77667bcae35f95d0e42a792f3"
+    },
+    {
+      "package": "mingw-w64-zlib",
+      "source": "https://github.com/madler/zlib/releases/download/v1.3.2/zlib-1.3.2.tar.xz.asc",
+      "verification": "presence only (upstream SKIP)",
+      "actual_hash": "03ce710347e2f84fa7ed0a6ae6a93467b08031a3022fc296da40220a83b96667"
+    },
+    {
+      "package": "mingw-w64-zlib",
+      "source": "01-zlib-1.2.11-1-buildsys.mingw.patch",
+      "verification": "sha256 pass",
+      "actual_hash": "b58b353d976d6fdd9a5094e60fa39439d4f14e9bf8be4a8bd475f2cd47f10226"
+    },
+    {
+      "package": "mingw-w64-zlib",
+      "source": "03-dont-put-sodir-into-L.mingw.patch",
+      "verification": "sha256 pass",
+      "actual_hash": "7287d12db57dcf0f66964c861100bf06ebe1ddcb243e7ee0773fcab1b2935596"
+    },
+    {
+      "package": "mingw-w64-zlib",
+      "source": "04-fix-largefile-support.patch",
+      "verification": "sha256 pass",
+      "actual_hash": "8e1cdf8edfc6ac08b0e660ca42a977942a88fab3ff59c01c87ba96500e2c3e63"
+    },
+    {
+      "package": "mingw-w64-zlib",
+      "source": "07-Add-no-undefined-to-link-to-enable-build-shared-vers.patch",
+      "verification": "sha256 pass",
+      "actual_hash": "fb83292f494f649ea7f1835aa4abea61acc593d7f90625741d42cd99cac0e075"
+    },
+    {
+      "package": "mingw-w64-zlib",
+      "source": "08-Add-bzip2-library-to-pkg-config-file.patch",
+      "verification": "sha256 pass",
+      "actual_hash": "0be98a7e660e7c068856f08b9e92d6c73a6b0d88c3e29a9716140b147f7c23c5"
+    },
+    {
+      "package": "mingw-w64-zlib",
+      "source": "https://patch-diff.githubusercontent.com/raw/madler/zlib/pull/1165.patch",
+      "verification": "sha256 pass",
+      "actual_hash": "0774e1368851504115f732f66230ca4a8a9cd60d4ba014502f65cc19b0b4d8bc"
+    },
+    {
+      "package": "mingw-w64-zstd",
+      "source": "https://github.com/facebook/zstd/releases/download/v1.5.7/zstd-1.5.7.tar.gz",
+      "verification": "sha256 pass",
+      "actual_hash": "eb33e51f49a15e023950cd7825ca74a4a2b43db8354825ac24fc1b7ee09e6fa3"
+    },
+    {
+      "package": "mingw-w64-zstd",
+      "source": "https://github.com/facebook/zstd/releases/download/v1.5.7/zstd-1.5.7.tar.gz.sig",
+      "verification": "presence only (upstream SKIP)",
+      "actual_hash": "24425933fb954f4608ae9383bc37ad8398e50364c1ec30bbdb5adbfe88209fb1"
+    },
+    {
+      "package": "mingw-w64-zstd",
+      "source": "zstd-1.4.0-fileio-mingw.patch",
+      "verification": "sha256 pass",
+      "actual_hash": "283e584477a8f70c9bea86a500486dd11dfcb59b22690fd94deb44a3f95a6668"
+    },
+    {
+      "package": "mingw-w64-gettext",
+      "source": "https://ftp.gnu.org/pub/gnu/gettext/gettext-1.0.tar.lz",
+      "verification": "sha256 pass",
+      "actual_hash": "d6342cbe1411a2fe7d139bfed80c2d63b1babc92acfedc72501cc105184f61ee"
+    },
+    {
+      "package": "mingw-w64-gettext",
+      "source": "https://ftp.gnu.org/pub/gnu/gettext/gettext-1.0.tar.lz.sig",
+      "verification": "presence only (upstream SKIP)",
+      "actual_hash": "39fae6a06678f1d34f0ad8ccb670435b48af3b062cf8f0b50d39159ac3d1c0b1"
+    },
+    {
+      "package": "mingw-w64-gettext",
+      "source": "0005-Fix-compilation-of-pthread_sigmask.c.patch",
+      "verification": "sha256 pass",
+      "actual_hash": "cbc2f533012d646521afa20f8b256917fce040741ff42cf53fb6dd7123a6670a"
+    },
+    {
+      "package": "mingw-w64-gettext",
+      "source": "122-Use-LF-as-newline-in-envsubst.patch",
+      "verification": "sha256 pass",
+      "actual_hash": "ec39103d851262c02c27b7038f3c538e03afaefc6aa050311d62519d192ff38c"
+    },
+    {
+      "package": "mingw-w64-gettext",
+      "source": "0021-replace-fsync.patch",
+      "verification": "sha256 pass",
+      "actual_hash": "380dbddee2f9e2feee4c1435e8a942b5d11d0125e60c3350ebb10c19b19011aa"
+    },
+    {
+      "package": "mingw-w64-gettext",
+      "source": "0022-libasprintf.patch",
+      "verification": "sha256 pass",
+      "actual_hash": "c354f6a7021069c99b90f1c6d6f6a4ccf40a01e9f6742b866df2b5a7286cb868"
+    },
+    {
+      "package": "mingw-w64-gettext",
+      "source": "0024-disable-gnu-format.patch",
+      "verification": "sha256 pass",
+      "actual_hash": "ce7ccf6dd3a492cab322253cd67310899b546eccc25821c25cbc047a1a984633"
+    },
+    {
+      "package": "mingw-w64-gettext",
+      "source": "0030-fix-build-with-mingw-w64-clang.patch",
+      "verification": "sha256 pass",
+      "actual_hash": "9b1b4f0c65b3bc1a3103c921a02c203cecf533d145f0bd90023406e760f81749"
+    },
+    {
+      "package": "mingw-w64-tzdata",
+      "source": "https://www.iana.org/time-zones/repository/releases/tzdata2026d.tar.gz",
+      "verification": "sha256 pass",
+      "actual_hash": "0cb2aa8e333c3dc049badc42a0c61f21987b8cd44e107fa900bad764aacc7767"
+    },
+    {
+      "package": "mingw-w64-tzdata",
+      "source": "https://www.iana.org/time-zones/repository/releases/tzdata2026d.tar.gz.asc",
+      "verification": "presence only (upstream SKIP)",
+      "actual_hash": "707ec6789d41fb268205de0924680df9a4c99b6dc9e0cf89b0d2fdaae42d0824"
+    },
+    {
+      "package": "mingw-w64-tzdata",
+      "source": "https://www.iana.org/time-zones/repository/releases/tzcode2026d.tar.gz",
+      "verification": "sha256 pass",
+      "actual_hash": "2f5c9f7fe29e6b8cb863583667884b8ce17b0a485355a054b591c6bdfcd81791"
+    },
+    {
+      "package": "mingw-w64-tzdata",
+      "source": "https://www.iana.org/time-zones/repository/releases/tzcode2026d.tar.gz.asc",
+      "verification": "presence only (upstream SKIP)",
+      "actual_hash": "839c59213b787b22855f64439b4186ec24f3a14d4f1f903fd98948f0c741db5c"
+    },
+    {
+      "package": "mingw-w64-libiconv",
+      "source": "https://ftp.gnu.org/pub/gnu/libiconv/libiconv-1.19.tar.gz",
+      "verification": "sha256 pass",
+      "actual_hash": "88dd96a8c0464eca144fc791ae60cd31cd8ee78321e67397e25fc095c4a19aa6"
+    },
+    {
+      "package": "mingw-w64-libiconv",
+      "source": "https://ftp.gnu.org/pub/gnu/libiconv/libiconv-1.19.tar.gz.sig",
+      "verification": "presence only (upstream SKIP)",
+      "actual_hash": "30374a9cf2846418fc34977eb2b92094c3edb76021d57de541699e2b5e32dc9b"
+    },
+    {
+      "package": "mingw-w64-libiconv",
+      "source": "0003-add-cp65001-as-utf8-alias.patch",
+      "verification": "sha256 pass",
+      "actual_hash": "cb2b1cca44c9b9bd11c3bd33997c10d22dff263542275324c88f34b59910ef87"
+    },
+    {
+      "package": "mingw-w64-libiconv",
+      "source": "0002-fix-cr-for-awk-in-configure.all.patch",
+      "verification": "sha256 pass",
+      "actual_hash": "89d5c0f666e50a0186cfb142ba7b77e8fe1ac4d65bdfd9ae14ae8d2f0045a87c"
+    },
+    {
+      "package": "mingw-w64-libiconv",
+      "source": "fix-pointer-buf.patch",
+      "verification": "sha256 pass",
+      "actual_hash": "6b6e2393840f4dc6067587165777b1a07978f4c05247d7c1010a45ad251bbeeb"
+    },
+    {
+      "package": "mingw-w64-libiconv",
+      "source": "iconv.pc",
+      "verification": "sha256 pass",
+      "actual_hash": "56e7ec406bf42eb66b1d972f20d229f7a76ba00c38c7b4403bf348875704baae"
+    }
+  ],
+  "pgp_signatures_verified": false,
+  "basis": "Official HTTPS binary SHA256 and source metadata. No source package build script executed."
+}

@@ -199,45 +199,16 @@ def find_gpp(extra_paths: Sequence[str] = (), force: bool = False) -> Optional[s
         if _GPP_PROBED and not force:
             return _GPP_PATH
 
-        candidates: List[str] = []
-
-        # 1) PATH 中直接可用
+        from .paths import APP_DIR
+        import shutil
         exe = "g++.exe" if os.name == "nt" else "g++"
-        try:
-            result = subprocess.run(
-                ["g++", "--version"], capture_output=True, text=True, timeout=10
-            )
-            if result.returncode == 0:
-                _GPP_PATH = "g++"
-                _GPP_PROBED = True
-                log_ok("找到 g++ (在 PATH 中)")
-                return _GPP_PATH
-        except Exception:  # noqa: BLE001
-            pass
-
-        # 2) 环境变量
-        env_gpp = os.environ.get("EOJ_GPP") or os.environ.get("CXX")
-        if env_gpp:
-            candidates.append(env_gpp)
-
-        # 3) 常见安装位置
-        candidates.extend(extra_paths)
-        candidates.extend(
-            [
-                r"D:\desktop\goodbyeworld\x86_64-8.1.0-release-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe",
-                r"C:\MinGW\bin\g++.exe",
-                r"C:\MinGW-w64\bin\g++.exe",
-                r"C:\msys64\mingw64\bin\g++.exe",
-                r"C:\msys64\ucrt64\bin\g++.exe",
-                r"C:\Program Files\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe",
-                os.path.expanduser(r"~\scoop\apps\gcc\current\bin\g++.exe"),
-                r"C:\ProgramData\chocolatey\bin\g++.exe",
-            ]
-        )
-        # 4) 从 PATH 各项中探测
-        for directory in os.environ.get("PATH", "").split(os.pathsep):
-            if directory:
-                candidates.append(os.path.join(directory, exe))
+        candidates = [
+            str(APP_DIR / "toolchain" / "ucrt64" / "bin" / exe),
+            str(APP_DIR / "toolchain" / "mingw64" / "bin" / exe),
+            os.environ.get("EOJ_GPP") or os.environ.get("CXX"),
+            *extra_paths,
+            shutil.which(exe),
+        ]
 
         for path in candidates:
             try:

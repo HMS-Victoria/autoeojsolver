@@ -1,0 +1,569 @@
+[
+  {
+    "name": "mingw-w64-ucrt-x86_64-gcc",
+    "page": "https://packages.msys2.org/packages/mingw-w64-ucrt-x86_64-gcc",
+    "version": "16.2.0-3",
+    "license": "GPL-3.0-or-later",
+    "binary_url": "https://mirror.msys2.org/mingw/ucrt64/mingw-w64-ucrt-x86_64-gcc-16.2.0-3-any.pkg.tar.zst",
+    "binary_sha256": "1cd86e5817f6e0d7310d7cb2bb91f4a55e1256cb4ce580a0c5f2a74e013d144d",
+    "source_url": "https://mirror.msys2.org/mingw/sources/mingw-w64-gcc-16.2.0-3.src.tar.zst",
+    "dependencies": [
+      "mingw-w64-ucrt-x86_64-binutils",
+      "mingw-w64-ucrt-x86_64-crt",
+      "mingw-w64-ucrt-x86_64-gcc-libs",
+      "mingw-w64-ucrt-x86_64-gmp",
+      "mingw-w64-ucrt-x86_64-headers",
+      "mingw-w64-ucrt-x86_64-isl",
+      "mingw-w64-ucrt-x86_64-mpc",
+      "mingw-w64-ucrt-x86_64-mpfr",
+      "mingw-w64-ucrt-x86_64-windows-default-manifest",
+      "mingw-w64-ucrt-x86_64-winpthreads",
+      "mingw-w64-ucrt-x86_64-zlib",
+      "mingw-w64-ucrt-x86_64-zstd"
+    ],
+    "provides": [
+      "mingw-w64-ucrt-x86_64-gcc-base",
+      "mingw-w64-ucrt-x86_64-cc"
+    ],
+    "depends_exact": [
+      "mingw-w64-ucrt-x86_64-binutils",
+      "mingw-w64-ucrt-x86_64-crt",
+      "mingw-w64-ucrt-x86_64-headers",
+      "mingw-w64-ucrt-x86_64-isl",
+      "mingw-w64-ucrt-x86_64-gmp",
+      "mingw-w64-ucrt-x86_64-mpfr",
+      "mingw-w64-ucrt-x86_64-mpc",
+      "mingw-w64-ucrt-x86_64-gcc-libs=16.2.0-3",
+      "mingw-w64-ucrt-x86_64-windows-default-manifest",
+      "mingw-w64-ucrt-x86_64-winpthreads",
+      "mingw-w64-ucrt-x86_64-zlib",
+      "mingw-w64-ucrt-x86_64-zstd"
+    ],
+    "source_sha256": "eb3479a8b0b23810fbbbc25ef76879e867e88d09960a40145d73f5505fda4da0",
+    "source_bytes": 107228430,
+    "source_members": [
+      "mingw-w64-gcc/",
+      "mingw-w64-gcc/.SRCINFO",
+      "mingw-w64-gcc/0002-i386-Keep-SEH-enabled-for-Win64-sysv_abi-functions.patch",
+      "mingw-w64-gcc/0003-Windows-Follow-Posix-dir-exists-semantics-more-close.patch",
+      "mingw-w64-gcc/0007-Build-EXTRA_GNATTOOLS-for-Ada.patch",
+      "mingw-w64-gcc/0008-Prettify-linking-no-undefined.patch",
+      "mingw-w64-gcc/0011-Enable-shared-gnat-implib.patch",
+      "mingw-w64-gcc/0012-Handle-spaces-in-path-for-default-manifest.patch",
+      "mingw-w64-gcc/0014-gcc-9-branch-clone_function_name_1-Retain-any-stdcall-suffix.patch",
+      "mingw-w64-gcc/0020-libgomp-Don-t-hard-code-MS-printf-attributes.patch",
+      "mingw-w64-gcc/0021-bootstrap-gnattools-Pass-target-sysroot-flags-to-boo.patch",
+      "mingw-w64-gcc/0022-mingw-Remove-outdated-mingw-stuff.patch",
+      "mingw-w64-gcc/0023-Ada-Don-t-export-gnat1-s-symbols-on-PE-hosts.patch",
+      "mingw-w64-gcc/0024-libgfortran-Guard-locale-restoration-for-formatted-I0.patch",
+      "mingw-w64-gcc/0025-libgfortran-Copy-LC_NUMERIC-string-for-formatted-IO.patch",
+      "mingw-w64-gcc/0140-gcc-diagnostic-color.patch",
+      "mingw-w64-gcc/0200-add-m-no-align-vector-insn-option-for-i386.patch",
+      "mingw-w64-gcc/2001-fix-building-rust-on-mingw-w64.patch",
+      "mingw-w64-gcc/3001-fix-codeview-crashes.patch",
+      "mingw-w64-gcc/gcc-16.2.0.tar.xz",
+      "mingw-w64-gcc/gcc-16.2.0.tar.xz.sig",
+      "mingw-w64-gcc/gdbinit",
+      "mingw-w64-gcc/PKGBUILD"
+    ]
+  },
+  {
+    "name": "mingw-w64-ucrt-x86_64-binutils",
+    "page": "https://packages.msys2.org/packages/mingw-w64-ucrt-x86_64-binutils",
+    "version": "2.47-3",
+    "license": "GPL-3.0-or-later AND GPL-2.0-or-later AND LGPL-3.0-or-later AND LGPL-2.0-or-later",
+    "binary_url": "https://mirror.msys2.org/mingw/ucrt64/mingw-w64-ucrt-x86_64-binutils-2.47-3-any.pkg.tar.zst",
+    "binary_sha256": "ba98af202fe71e0884bb51daf78ce10bd8a51c69528c700dcf5855e6ece06dd3",
+    "source_url": "https://mirror.msys2.org/mingw/sources/mingw-w64-binutils-2.47-3.src.tar.zst",
+    "dependencies": [
+      "mingw-w64-ucrt-x86_64-gettext-runtime",
+      "mingw-w64-ucrt-x86_64-libwinpthread",
+      "mingw-w64-ucrt-x86_64-zlib",
+      "mingw-w64-ucrt-x86_64-zstd"
+    ],
+    "provides": [],
+    "depends_exact": [
+      "mingw-w64-ucrt-x86_64-gettext-runtime",
+      "mingw-w64-ucrt-x86_64-libwinpthread",
+      "mingw-w64-ucrt-x86_64-zlib",
+      "mingw-w64-ucrt-x86_64-zstd"
+    ],
+    "source_sha256": "7f30f4c1624bb9a53f72b2b325d7560a730a7157faafbfc2242ddbaa4833118a",
+    "source_bytes": 39009763,
+    "source_members": [
+      "mingw-w64-binutils/",
+      "mingw-w64-binutils/.SRCINFO",
+      "mingw-w64-binutils/0002-check-for-unusual-file-harder.patch",
+      "mingw-w64-binutils/2001-ld-option-to-move-default-bases-under-4GB.patch",
+      "mingw-w64-binutils/2003-Revert-Restore-old-behaviour-of-windres-so-that-opti.patch",
+      "mingw-w64-binutils/2004-ld-Prevent-_tls_used-and-_load_config_used-from-bein.patch",
+      "mingw-w64-binutils/4000-fix-DEBUG_S_INLINEELINES.patch",
+      "mingw-w64-binutils/binutils-2.47.tar.bz2",
+      "mingw-w64-binutils/binutils-2.47.tar.bz2.sig",
+      "mingw-w64-binutils/libiberty-unlink-handle-windows-nul.patch",
+      "mingw-w64-binutils/PKGBUILD",
+      "mingw-w64-binutils/reproducible-import-libraries.patch"
+    ]
+  },
+  {
+    "name": "mingw-w64-ucrt-x86_64-crt",
+    "page": "https://packages.msys2.org/packages/mingw-w64-ucrt-x86_64-crt",
+    "version": "14.0.0.r409.g6de5d3b4d-1",
+    "license": "ZPL-2.1",
+    "binary_url": "https://mirror.msys2.org/mingw/ucrt64/mingw-w64-ucrt-x86_64-crt-14.0.0.r409.g6de5d3b4d-1-any.pkg.tar.zst",
+    "binary_sha256": "9397139d5e84acfe1256070163baee45ff4ae1a03e1d5a8f1098a438e12d67ab",
+    "source_url": "https://mirror.msys2.org/mingw/sources/mingw-w64-crt-14.0.0.r409.g6de5d3b4d-1.src.tar.zst",
+    "dependencies": [
+      "mingw-w64-ucrt-x86_64-headers"
+    ],
+    "provides": [
+      "mingw-w64-ucrt-x86_64-crt-git"
+    ],
+    "depends_exact": [
+      "mingw-w64-ucrt-x86_64-headers"
+    ],
+    "source_sha256": "73efdd3852d80a7419de80a5fb9ad8cf43dd50b32d7e41dba05fe7cd570db3cf",
+    "source_bytes": 54745097,
+    "source_members": [
+      "mingw-w64-crt/",
+      "mingw-w64-crt/.SRCINFO",
+      "mingw-w64-crt/mingw-w64/",
+      "mingw-w64-crt/PKGBUILD",
+      "mingw-w64-crt/mingw-w64/config",
+      "mingw-w64-crt/mingw-w64/description",
+      "mingw-w64-crt/mingw-w64/HEAD",
+      "mingw-w64-crt/mingw-w64/hooks/",
+      "mingw-w64-crt/mingw-w64/info/",
+      "mingw-w64-crt/mingw-w64/objects/",
+      "mingw-w64-crt/mingw-w64/packed-refs",
+      "mingw-w64-crt/mingw-w64/refs/",
+      "mingw-w64-crt/mingw-w64/refs/heads/",
+      "mingw-w64-crt/mingw-w64/refs/tags/",
+      "mingw-w64-crt/mingw-w64/objects/info/",
+      "mingw-w64-crt/mingw-w64/objects/pack/",
+      "mingw-w64-crt/mingw-w64/objects/pack/pack-ece2c083197dacc1d2b83ffb053a9f330996a6aa.idx",
+      "mingw-w64-crt/mingw-w64/objects/pack/pack-ece2c083197dacc1d2b83ffb053a9f330996a6aa.pack",
+      "mingw-w64-crt/mingw-w64/objects/pack/pack-ece2c083197dacc1d2b83ffb053a9f330996a6aa.rev",
+      "mingw-w64-crt/mingw-w64/info/exclude",
+      "mingw-w64-crt/mingw-w64/hooks/applypatch-msg.sample",
+      "mingw-w64-crt/mingw-w64/hooks/commit-msg.sample",
+      "mingw-w64-crt/mingw-w64/hooks/fsmonitor-watchman.sample",
+      "mingw-w64-crt/mingw-w64/hooks/post-update.sample",
+      "mingw-w64-crt/mingw-w64/hooks/pre-applypatch.sample",
+      "mingw-w64-crt/mingw-w64/hooks/pre-commit.sample",
+      "mingw-w64-crt/mingw-w64/hooks/pre-merge-commit.sample",
+      "mingw-w64-crt/mingw-w64/hooks/pre-push.sample",
+      "mingw-w64-crt/mingw-w64/hooks/pre-rebase.sample",
+      "mingw-w64-crt/mingw-w64/hooks/pre-receive.sample",
+      "mingw-w64-crt/mingw-w64/hooks/prepare-commit-msg.sample",
+      "mingw-w64-crt/mingw-w64/hooks/push-to-checkout.sample",
+      "mingw-w64-crt/mingw-w64/hooks/sendemail-validate.sample",
+      "mingw-w64-crt/mingw-w64/hooks/update.sample"
+    ]
+  },
+  {
+    "name": "mingw-w64-ucrt-x86_64-gcc-libs",
+    "page": "https://packages.msys2.org/packages/mingw-w64-ucrt-x86_64-gcc-libs",
+    "version": "16.2.0-3",
+    "license": "GPL-3.0-or-later WITH GCC-exception-3.1 AND LGPL-2.1-or-later",
+    "binary_url": "https://mirror.msys2.org/mingw/ucrt64/mingw-w64-ucrt-x86_64-gcc-libs-16.2.0-3-any.pkg.tar.zst",
+    "binary_sha256": "5763fabf86fa13a4449ee765006d3446384ed66af7bf827459710eb777e0b11c",
+    "source_url": "https://mirror.msys2.org/mingw/sources/mingw-w64-gcc-16.2.0-3.src.tar.zst",
+    "dependencies": [
+      "mingw-w64-ucrt-x86_64-libwinpthread",
+      "mingw-w64-ucrt-x86_64-tzdata"
+    ],
+    "provides": [
+      "mingw-w64-ucrt-x86_64-omp",
+      "mingw-w64-ucrt-x86_64-cc-libs"
+    ],
+    "depends_exact": [
+      "mingw-w64-ucrt-x86_64-libwinpthread",
+      "mingw-w64-ucrt-x86_64-tzdata"
+    ],
+    "source_sha256": "eb3479a8b0b23810fbbbc25ef76879e867e88d09960a40145d73f5505fda4da0"
+  },
+  {
+    "name": "mingw-w64-ucrt-x86_64-gmp",
+    "page": "https://packages.msys2.org/packages/mingw-w64-ucrt-x86_64-gmp",
+    "version": "6.3.0-2",
+    "license": "LGPL3 OR GPL",
+    "binary_url": "https://mirror.msys2.org/mingw/ucrt64/mingw-w64-ucrt-x86_64-gmp-6.3.0-2-any.pkg.tar.zst",
+    "binary_sha256": "e82a75968a556484a50084578238a84eb60fb93e34986fd6695c537975bd39ea",
+    "source_url": "https://mirror.msys2.org/mingw/sources/mingw-w64-gmp-6.3.0-2.src.tar.zst",
+    "dependencies": [],
+    "provides": [],
+    "depends_exact": [],
+    "source_sha256": "f288f944fd9609db220bcf6a8dd0703a5674eeb906ef35eb8485bb8192135994",
+    "source_bytes": 2097066,
+    "source_members": [
+      "mingw-w64-gmp/",
+      "mingw-w64-gmp/.SRCINFO",
+      "mingw-w64-gmp/do-not-use-dllimport.diff",
+      "mingw-w64-gmp/gmp-6.3.0.tar.xz",
+      "mingw-w64-gmp/gmp-6.3.0.tar.xz.sig",
+      "mingw-w64-gmp/gmp-staticlib.diff",
+      "mingw-w64-gmp/PKGBUILD"
+    ]
+  },
+  {
+    "name": "mingw-w64-ucrt-x86_64-headers",
+    "page": "https://packages.msys2.org/packages/mingw-w64-ucrt-x86_64-headers",
+    "version": "14.0.0.r409.g6de5d3b4d-1",
+    "license": "ZPL-2.1 AND LGPL-2.1-or-later",
+    "binary_url": "https://mirror.msys2.org/mingw/ucrt64/mingw-w64-ucrt-x86_64-headers-14.0.0.r409.g6de5d3b4d-1-any.pkg.tar.zst",
+    "binary_sha256": "1862a7e2bcd8ec33d4c3b96fa5454a93526b5a23be816a602bb019235e2a7049",
+    "source_url": "https://mirror.msys2.org/mingw/sources/mingw-w64-headers-14.0.0.r409.g6de5d3b4d-1.src.tar.zst",
+    "dependencies": [],
+    "provides": [
+      "mingw-w64-ucrt-x86_64-headers-git"
+    ],
+    "depends_exact": [],
+    "source_sha256": "47f0f9465bb284728a670513f7e3bf93a2c1589eede3bef9a25688a4073799d1",
+    "source_bytes": 54747969,
+    "source_members": [
+      "mingw-w64-headers/",
+      "mingw-w64-headers/.SRCINFO",
+      "mingw-w64-headers/0001-remove-ireference-boolean.patch",
+      "mingw-w64-headers/mingw-w64/",
+      "mingw-w64-headers/PKGBUILD",
+      "mingw-w64-headers/mingw-w64/config",
+      "mingw-w64-headers/mingw-w64/description",
+      "mingw-w64-headers/mingw-w64/HEAD",
+      "mingw-w64-headers/mingw-w64/hooks/",
+      "mingw-w64-headers/mingw-w64/info/",
+      "mingw-w64-headers/mingw-w64/objects/",
+      "mingw-w64-headers/mingw-w64/packed-refs",
+      "mingw-w64-headers/mingw-w64/refs/",
+      "mingw-w64-headers/mingw-w64/refs/heads/",
+      "mingw-w64-headers/mingw-w64/refs/tags/",
+      "mingw-w64-headers/mingw-w64/objects/info/",
+      "mingw-w64-headers/mingw-w64/objects/pack/",
+      "mingw-w64-headers/mingw-w64/objects/pack/pack-ece2c083197dacc1d2b83ffb053a9f330996a6aa.idx",
+      "mingw-w64-headers/mingw-w64/objects/pack/pack-ece2c083197dacc1d2b83ffb053a9f330996a6aa.pack",
+      "mingw-w64-headers/mingw-w64/objects/pack/pack-ece2c083197dacc1d2b83ffb053a9f330996a6aa.rev",
+      "mingw-w64-headers/mingw-w64/info/exclude",
+      "mingw-w64-headers/mingw-w64/hooks/applypatch-msg.sample",
+      "mingw-w64-headers/mingw-w64/hooks/commit-msg.sample",
+      "mingw-w64-headers/mingw-w64/hooks/fsmonitor-watchman.sample",
+      "mingw-w64-headers/mingw-w64/hooks/post-update.sample",
+      "mingw-w64-headers/mingw-w64/hooks/pre-applypatch.sample",
+      "mingw-w64-headers/mingw-w64/hooks/pre-commit.sample",
+      "mingw-w64-headers/mingw-w64/hooks/pre-merge-commit.sample",
+      "mingw-w64-headers/mingw-w64/hooks/pre-push.sample",
+      "mingw-w64-headers/mingw-w64/hooks/pre-rebase.sample",
+      "mingw-w64-headers/mingw-w64/hooks/pre-receive.sample",
+      "mingw-w64-headers/mingw-w64/hooks/prepare-commit-msg.sample",
+      "mingw-w64-headers/mingw-w64/hooks/push-to-checkout.sample",
+      "mingw-w64-headers/mingw-w64/hooks/sendemail-validate.sample",
+      "mingw-w64-headers/mingw-w64/hooks/update.sample"
+    ]
+  },
+  {
+    "name": "mingw-w64-ucrt-x86_64-isl",
+    "page": "https://packages.msys2.org/packages/mingw-w64-ucrt-x86_64-isl",
+    "version": "0.28-1",
+    "license": "MIT",
+    "binary_url": "https://mirror.msys2.org/mingw/ucrt64/mingw-w64-ucrt-x86_64-isl-0.28-1-any.pkg.tar.zst",
+    "binary_sha256": "8594e01a253d5a72646c586cf5a1626c1b1c2be7c30060fe67abd9bebe3fe223",
+    "source_url": "https://mirror.msys2.org/mingw/sources/mingw-w64-isl-0.28-1.src.tar.zst",
+    "dependencies": [
+      "mingw-w64-ucrt-x86_64-gmp"
+    ],
+    "provides": [],
+    "depends_exact": [
+      "mingw-w64-ucrt-x86_64-gmp"
+    ],
+    "source_sha256": "889246cdeb8b3f731010b2c63edc16ee75a7a0e7336d267fa071710d11751b05",
+    "source_bytes": 1944224,
+    "source_members": [
+      "mingw-w64-isl/",
+      "mingw-w64-isl/.SRCINFO",
+      "mingw-w64-isl/isl-0.14.1-no-undefined.patch",
+      "mingw-w64-isl/isl-0.28.tar.xz",
+      "mingw-w64-isl/PKGBUILD"
+    ]
+  },
+  {
+    "name": "mingw-w64-ucrt-x86_64-mpc",
+    "page": "https://packages.msys2.org/packages/mingw-w64-ucrt-x86_64-mpc",
+    "version": "1.4.1-1",
+    "license": "LGPL-3.0-or-later",
+    "binary_url": "https://mirror.msys2.org/mingw/ucrt64/mingw-w64-ucrt-x86_64-mpc-1.4.1-1-any.pkg.tar.zst",
+    "binary_sha256": "f06556e811c711ce91609484e31d358e4f495811ba29813bf2284a3b236d82ce",
+    "source_url": "https://mirror.msys2.org/mingw/sources/mingw-w64-mpc-1.4.1-1.src.tar.zst",
+    "dependencies": [
+      "mingw-w64-ucrt-x86_64-gmp",
+      "mingw-w64-ucrt-x86_64-mpfr"
+    ],
+    "provides": [],
+    "depends_exact": [
+      "mingw-w64-ucrt-x86_64-gmp",
+      "mingw-w64-ucrt-x86_64-mpfr"
+    ],
+    "source_sha256": "655ed4227108f08f129a0900850ab16330c2e2ad45105900d4327f036ace3a5f",
+    "source_bytes": 533531,
+    "source_members": [
+      "mingw-w64-mpc/",
+      "mingw-w64-mpc/.SRCINFO",
+      "mingw-w64-mpc/mpc-1.4.1.tar.xz",
+      "mingw-w64-mpc/mpc-1.4.1.tar.xz.sig",
+      "mingw-w64-mpc/PKGBUILD"
+    ]
+  },
+  {
+    "name": "mingw-w64-ucrt-x86_64-mpfr",
+    "page": "https://packages.msys2.org/packages/mingw-w64-ucrt-x86_64-mpfr",
+    "version": "4.2.2-3",
+    "license": "LGPL-3.0-or-later",
+    "binary_url": "https://mirror.msys2.org/mingw/ucrt64/mingw-w64-ucrt-x86_64-mpfr-4.2.2-3-any.pkg.tar.zst",
+    "binary_sha256": "6b70a275d2ec75c70aa50a236c218e6b7ee9a5ab4c6d52cb0b580267b7d200fe",
+    "source_url": "https://mirror.msys2.org/mingw/sources/mingw-w64-mpfr-4.2.2-3.src.tar.zst",
+    "dependencies": [
+      "mingw-w64-ucrt-x86_64-cc-libs",
+      "mingw-w64-ucrt-x86_64-gmp"
+    ],
+    "provides": [],
+    "depends_exact": [
+      "mingw-w64-ucrt-x86_64-cc-libs",
+      "mingw-w64-ucrt-x86_64-gmp"
+    ],
+    "source_sha256": "c8c9b1e091b744165b150d59b7599bcf014fe9c3ae21df98fd3807f05f702c60",
+    "source_bytes": 1507413,
+    "source_members": [
+      "mingw-w64-mpfr/",
+      "mingw-w64-mpfr/.SRCINFO",
+      "mingw-w64-mpfr/mpfr-4.2.2.tar.xz",
+      "mingw-w64-mpfr/mpfr-4.2.2.tar.xz.sig",
+      "mingw-w64-mpfr/PKGBUILD"
+    ]
+  },
+  {
+    "name": "mingw-w64-ucrt-x86_64-windows-default-manifest",
+    "page": "https://packages.msys2.org/packages/mingw-w64-ucrt-x86_64-windows-default-manifest",
+    "version": "20260815-1",
+    "license": "custom:Public Domain",
+    "binary_url": "https://mirror.msys2.org/mingw/ucrt64/mingw-w64-ucrt-x86_64-windows-default-manifest-20260815-1-any.pkg.tar.zst",
+    "binary_sha256": "b39039f754a600cc0dec49df7d675a59a3cb2b63691d91b4ae60735ee7075eca",
+    "source_url": "https://mirror.msys2.org/mingw/sources/mingw-w64-windows-default-manifest-20260815-1.src.tar.zst",
+    "dependencies": [],
+    "provides": [],
+    "depends_exact": [],
+    "source_sha256": "bed6d206e13c6ef0149f59fb7ed0a20c8665b8f39297247aded467860830f954",
+    "source_bytes": 1973,
+    "source_members": [
+      "mingw-w64-windows-default-manifest/",
+      "mingw-w64-windows-default-manifest/.SRCINFO",
+      "mingw-w64-windows-default-manifest/genrc.py",
+      "mingw-w64-windows-default-manifest/PKGBUILD"
+    ]
+  },
+  {
+    "name": "mingw-w64-ucrt-x86_64-winpthreads",
+    "page": "https://packages.msys2.org/packages/mingw-w64-ucrt-x86_64-winpthreads",
+    "version": "14.0.0.r409.g6de5d3b4d-1",
+    "license": "MIT AND BSD-3-Clause-Clear",
+    "binary_url": "https://mirror.msys2.org/mingw/ucrt64/mingw-w64-ucrt-x86_64-winpthreads-14.0.0.r409.g6de5d3b4d-1-any.pkg.tar.zst",
+    "binary_sha256": "3e3ebe8ffa41065622e6ae06d05bd0630bdefe6b280bb6f151ded30147815c85",
+    "source_url": "https://mirror.msys2.org/mingw/sources/mingw-w64-winpthreads-14.0.0.r409.g6de5d3b4d-1.src.tar.zst",
+    "dependencies": [
+      "mingw-w64-ucrt-x86_64-crt",
+      "mingw-w64-ucrt-x86_64-libwinpthread"
+    ],
+    "provides": [
+      "mingw-w64-ucrt-x86_64-winpthreads-git"
+    ],
+    "depends_exact": [
+      "mingw-w64-ucrt-x86_64-crt",
+      "mingw-w64-ucrt-x86_64-libwinpthread=14.0.0.r409.g6de5d3b4d"
+    ],
+    "source_sha256": "aceeb78672dd8378d04f87479e721d9e885f974e63797ffbc1d0b59e09eec934",
+    "source_bytes": 54802160,
+    "source_members": [
+      "mingw-w64-winpthreads/",
+      "mingw-w64-winpthreads/.SRCINFO",
+      "mingw-w64-winpthreads/0001-Define-__-de-register_frame_info-in-fake-libgcc_s.patch",
+      "mingw-w64-winpthreads/mingw-w64/",
+      "mingw-w64-winpthreads/PKGBUILD",
+      "mingw-w64-winpthreads/mingw-w64/config",
+      "mingw-w64-winpthreads/mingw-w64/description",
+      "mingw-w64-winpthreads/mingw-w64/HEAD",
+      "mingw-w64-winpthreads/mingw-w64/hooks/",
+      "mingw-w64-winpthreads/mingw-w64/info/",
+      "mingw-w64-winpthreads/mingw-w64/objects/",
+      "mingw-w64-winpthreads/mingw-w64/packed-refs",
+      "mingw-w64-winpthreads/mingw-w64/refs/",
+      "mingw-w64-winpthreads/mingw-w64/refs/heads/",
+      "mingw-w64-winpthreads/mingw-w64/refs/tags/",
+      "mingw-w64-winpthreads/mingw-w64/objects/info/",
+      "mingw-w64-winpthreads/mingw-w64/objects/pack/",
+      "mingw-w64-winpthreads/mingw-w64/objects/pack/pack-c2779e8046dbbe24d3df92599c67936f432b2807.idx",
+      "mingw-w64-winpthreads/mingw-w64/objects/pack/pack-c2779e8046dbbe24d3df92599c67936f432b2807.pack",
+      "mingw-w64-winpthreads/mingw-w64/objects/pack/pack-c2779e8046dbbe24d3df92599c67936f432b2807.rev",
+      "mingw-w64-winpthreads/mingw-w64/info/exclude",
+      "mingw-w64-winpthreads/mingw-w64/hooks/applypatch-msg.sample",
+      "mingw-w64-winpthreads/mingw-w64/hooks/commit-msg.sample",
+      "mingw-w64-winpthreads/mingw-w64/hooks/fsmonitor-watchman.sample",
+      "mingw-w64-winpthreads/mingw-w64/hooks/post-update.sample",
+      "mingw-w64-winpthreads/mingw-w64/hooks/pre-applypatch.sample",
+      "mingw-w64-winpthreads/mingw-w64/hooks/pre-commit.sample",
+      "mingw-w64-winpthreads/mingw-w64/hooks/pre-merge-commit.sample",
+      "mingw-w64-winpthreads/mingw-w64/hooks/pre-push.sample",
+      "mingw-w64-winpthreads/mingw-w64/hooks/pre-rebase.sample",
+      "mingw-w64-winpthreads/mingw-w64/hooks/pre-receive.sample",
+      "mingw-w64-winpthreads/mingw-w64/hooks/prepare-commit-msg.sample",
+      "mingw-w64-winpthreads/mingw-w64/hooks/push-to-checkout.sample",
+      "mingw-w64-winpthreads/mingw-w64/hooks/sendemail-validate.sample",
+      "mingw-w64-winpthreads/mingw-w64/hooks/update.sample"
+    ]
+  },
+  {
+    "name": "mingw-w64-ucrt-x86_64-zlib",
+    "page": "https://packages.msys2.org/packages/mingw-w64-ucrt-x86_64-zlib",
+    "version": "1.3.2-2",
+    "license": "Zlib",
+    "binary_url": "https://mirror.msys2.org/mingw/ucrt64/mingw-w64-ucrt-x86_64-zlib-1.3.2-2-any.pkg.tar.zst",
+    "binary_sha256": "841401182976d2f9e17e5c0ebaac51f2a8014140ea53d67625e91c8fb3c85ea0",
+    "source_url": "https://mirror.msys2.org/mingw/sources/mingw-w64-zlib-1.3.2-2.src.tar.zst",
+    "dependencies": [],
+    "provides": [],
+    "depends_exact": [],
+    "source_sha256": "eef69dea52357e01b272d6fd6dc4d7c0773f71260cb7bcde6047c8c383518db3",
+    "source_bytes": 1326375,
+    "source_members": [
+      "mingw-w64-zlib/",
+      "mingw-w64-zlib/.SRCINFO",
+      "mingw-w64-zlib/01-zlib-1.2.11-1-buildsys.mingw.patch",
+      "mingw-w64-zlib/03-dont-put-sodir-into-L.mingw.patch",
+      "mingw-w64-zlib/04-fix-largefile-support.patch",
+      "mingw-w64-zlib/07-Add-no-undefined-to-link-to-enable-build-shared-vers.patch",
+      "mingw-w64-zlib/08-Add-bzip2-library-to-pkg-config-file.patch",
+      "mingw-w64-zlib/1165.patch",
+      "mingw-w64-zlib/PKGBUILD",
+      "mingw-w64-zlib/zlib-1.3.2.tar.xz",
+      "mingw-w64-zlib/zlib-1.3.2.tar.xz.asc"
+    ]
+  },
+  {
+    "name": "mingw-w64-ucrt-x86_64-zstd",
+    "page": "https://packages.msys2.org/packages/mingw-w64-ucrt-x86_64-zstd",
+    "version": "1.5.7-2",
+    "license": "BSD-3-Clause OR GPL-2.0-or-later",
+    "binary_url": "https://mirror.msys2.org/mingw/ucrt64/mingw-w64-ucrt-x86_64-zstd-1.5.7-2-any.pkg.tar.zst",
+    "binary_sha256": "dbdb8427280046a2b41697780aa4c52983b708082b0da4755951dc3bea96ca89",
+    "source_url": "https://mirror.msys2.org/mingw/sources/mingw-w64-zstd-1.5.7-2.src.tar.zst",
+    "dependencies": [
+      "mingw-w64-ucrt-x86_64-cc-libs"
+    ],
+    "provides": [],
+    "depends_exact": [
+      "mingw-w64-ucrt-x86_64-cc-libs"
+    ],
+    "source_sha256": "306797282df799e95d550e6d0bb4b0a7b848027b8e13893a24236e060837c217",
+    "source_bytes": 2402010,
+    "source_members": [
+      "mingw-w64-zstd/",
+      "mingw-w64-zstd/.SRCINFO",
+      "mingw-w64-zstd/PKGBUILD",
+      "mingw-w64-zstd/zstd-1.4.0-fileio-mingw.patch",
+      "mingw-w64-zstd/zstd-1.5.7.tar.gz",
+      "mingw-w64-zstd/zstd-1.5.7.tar.gz.sig"
+    ]
+  },
+  {
+    "name": "mingw-w64-ucrt-x86_64-gettext-runtime",
+    "page": "https://packages.msys2.org/packages/mingw-w64-ucrt-x86_64-gettext-runtime",
+    "version": "1.0-1",
+    "license": "GPL-3.0-or-later AND LGPL-2.1-or-later",
+    "binary_url": "https://mirror.msys2.org/mingw/ucrt64/mingw-w64-ucrt-x86_64-gettext-runtime-1.0-1-any.pkg.tar.zst",
+    "binary_sha256": "ba693dda4ac375af76ce481ff3a6e7481286546cc7dc6d56c7021dae34084157",
+    "source_url": "https://mirror.msys2.org/mingw/sources/mingw-w64-gettext-1.0-1.src.tar.zst",
+    "dependencies": [
+      "mingw-w64-ucrt-x86_64-cc-libs",
+      "mingw-w64-ucrt-x86_64-libiconv"
+    ],
+    "provides": [],
+    "depends_exact": [
+      "mingw-w64-ucrt-x86_64-cc-libs",
+      "mingw-w64-ucrt-x86_64-libiconv"
+    ],
+    "source_sha256": "cca0d0c8f60353faccc5ad40405240014e4a7ccc8b1c6ca9f4626aef3097d26e",
+    "source_bytes": 10267655,
+    "source_members": [
+      "mingw-w64-gettext/",
+      "mingw-w64-gettext/.SRCINFO",
+      "mingw-w64-gettext/0005-Fix-compilation-of-pthread_sigmask.c.patch",
+      "mingw-w64-gettext/0021-replace-fsync.patch",
+      "mingw-w64-gettext/0022-libasprintf.patch",
+      "mingw-w64-gettext/0024-disable-gnu-format.patch",
+      "mingw-w64-gettext/0030-fix-build-with-mingw-w64-clang.patch",
+      "mingw-w64-gettext/122-Use-LF-as-newline-in-envsubst.patch",
+      "mingw-w64-gettext/gettext-1.0.tar.lz",
+      "mingw-w64-gettext/gettext-1.0.tar.lz.sig",
+      "mingw-w64-gettext/PKGBUILD"
+    ]
+  },
+  {
+    "name": "mingw-w64-ucrt-x86_64-libwinpthread",
+    "page": "https://packages.msys2.org/packages/mingw-w64-ucrt-x86_64-libwinpthread",
+    "version": "14.0.0.r409.g6de5d3b4d-1",
+    "license": "MIT AND BSD-3-Clause-Clear",
+    "binary_url": "https://mirror.msys2.org/mingw/ucrt64/mingw-w64-ucrt-x86_64-libwinpthread-14.0.0.r409.g6de5d3b4d-1-any.pkg.tar.zst",
+    "binary_sha256": "d186fa294f17b5b630f9ff3ee3c5d90dcd46b9995c36f68deef4bc46aee453a1",
+    "source_url": "https://mirror.msys2.org/mingw/sources/mingw-w64-winpthreads-14.0.0.r409.g6de5d3b4d-1.src.tar.zst",
+    "dependencies": [],
+    "provides": [
+      "mingw-w64-ucrt-x86_64-libwinpthread-git"
+    ],
+    "depends_exact": [],
+    "source_sha256": "aceeb78672dd8378d04f87479e721d9e885f974e63797ffbc1d0b59e09eec934"
+  },
+  {
+    "name": "mingw-w64-ucrt-x86_64-tzdata",
+    "page": "https://packages.msys2.org/packages/mingw-w64-ucrt-x86_64-tzdata",
+    "version": "2026d-1",
+    "license": "custom: public domain",
+    "binary_url": "https://mirror.msys2.org/mingw/ucrt64/mingw-w64-ucrt-x86_64-tzdata-2026d-1-any.pkg.tar.zst",
+    "binary_sha256": "81de12269b33f428d2e9719f7c99d7530bd0cb25276c9300cfc9ff31a1194960",
+    "source_url": "https://mirror.msys2.org/mingw/sources/mingw-w64-tzdata-2026d-1.src.tar.zst",
+    "dependencies": [],
+    "provides": [],
+    "depends_exact": [],
+    "source_sha256": "4c6f5a55393436d2f77276f39bd44c312dd46816982be753262e98bf6f7d2f0d",
+    "source_bytes": 690462,
+    "source_members": [
+      "mingw-w64-tzdata/",
+      "mingw-w64-tzdata/.SRCINFO",
+      "mingw-w64-tzdata/PKGBUILD",
+      "mingw-w64-tzdata/tzcode2026d.tar.gz",
+      "mingw-w64-tzdata/tzcode2026d.tar.gz.asc",
+      "mingw-w64-tzdata/tzdata2026d.tar.gz",
+      "mingw-w64-tzdata/tzdata2026d.tar.gz.asc"
+    ]
+  },
+  {
+    "name": "mingw-w64-ucrt-x86_64-libiconv",
+    "page": "https://packages.msys2.org/packages/mingw-w64-ucrt-x86_64-libiconv",
+    "version": "1.19-1",
+    "license": "LGPL-2.1-or-later OR documentation:spdx:GPL-3.0-or-later",
+    "binary_url": "https://mirror.msys2.org/mingw/ucrt64/mingw-w64-ucrt-x86_64-libiconv-1.19-1-any.pkg.tar.zst",
+    "binary_sha256": "9a500f38c2b91808741c62fae746b3e9110b33a1ecf5c30fa0c66dbedddf7e16",
+    "source_url": "https://mirror.msys2.org/mingw/sources/mingw-w64-libiconv-1.19-1.src.tar.zst",
+    "dependencies": [],
+    "provides": [],
+    "depends_exact": [],
+    "source_sha256": "74428280c17094da5b702c29b2e1a0abae59556ea5dfdd65705cc8ccc1e000fb",
+    "source_bytes": 5131029,
+    "source_members": [
+      "mingw-w64-libiconv/",
+      "mingw-w64-libiconv/.SRCINFO",
+      "mingw-w64-libiconv/0002-fix-cr-for-awk-in-configure.all.patch",
+      "mingw-w64-libiconv/0003-add-cp65001-as-utf8-alias.patch",
+      "mingw-w64-libiconv/fix-pointer-buf.patch",
+      "mingw-w64-libiconv/iconv.pc",
+      "mingw-w64-libiconv/libiconv-1.19.tar.gz",
+      "mingw-w64-libiconv/libiconv-1.19.tar.gz.sig",
+      "mingw-w64-libiconv/PKGBUILD"
+    ]
+  }
+]

@@ -1,0 +1,297 @@
+[
+  {
+    "archive": "binutils-2.47.tar.bz2",
+    "member": "binutils-2.47/COPYING",
+    "destination": "third-party-licenses-msys2\\mingw-w64-binutils\\binutils-2.47\\COPYING"
+  },
+  {
+    "archive": "binutils-2.47.tar.bz2",
+    "member": "binutils-2.47/COPYING.LIB",
+    "destination": "third-party-licenses-msys2\\mingw-w64-binutils\\binutils-2.47\\COPYING.LIB"
+  },
+  {
+    "archive": "binutils-2.47.tar.bz2",
+    "member": "binutils-2.47/COPYING3",
+    "destination": "third-party-licenses-msys2\\mingw-w64-binutils\\binutils-2.47\\COPYING3"
+  },
+  {
+    "archive": "binutils-2.47.tar.bz2",
+    "member": "binutils-2.47/COPYING3.LIB",
+    "destination": "third-party-licenses-msys2\\mingw-w64-binutils\\binutils-2.47\\COPYING3.LIB"
+  },
+  {
+    "archive": "binutils-2.47.tar.bz2",
+    "member": "binutils-2.47/bfd/COPYING",
+    "destination": "third-party-licenses-msys2\\mingw-w64-binutils\\binutils-2.47\\bfd\\COPYING"
+  },
+  {
+    "archive": "binutils-2.47.tar.bz2",
+    "member": "binutils-2.47/gas/COPYING",
+    "destination": "third-party-licenses-msys2\\mingw-w64-binutils\\binutils-2.47\\gas\\COPYING"
+  },
+  {
+    "archive": "binutils-2.47.tar.bz2",
+    "member": "binutils-2.47/include/COPYING",
+    "destination": "third-party-licenses-msys2\\mingw-w64-binutils\\binutils-2.47\\include\\COPYING"
+  },
+  {
+    "archive": "binutils-2.47.tar.bz2",
+    "member": "binutils-2.47/include/COPYING3",
+    "destination": "third-party-licenses-msys2\\mingw-w64-binutils\\binutils-2.47\\include\\COPYING3"
+  },
+  {
+    "archive": "binutils-2.47.tar.bz2",
+    "member": "binutils-2.47/libiberty/COPYING.LIB",
+    "destination": "third-party-licenses-msys2\\mingw-w64-binutils\\binutils-2.47\\libiberty\\COPYING.LIB"
+  },
+  {
+    "archive": "binutils-2.47.tar.bz2",
+    "member": "binutils-2.47/libiberty/copying-lib.texi",
+    "destination": "third-party-licenses-msys2\\mingw-w64-binutils\\binutils-2.47\\libiberty\\copying-lib.texi"
+  },
+  {
+    "archive": "binutils-2.47.tar.bz2",
+    "member": "binutils-2.47/zlib/LICENSE",
+    "destination": "third-party-licenses-msys2\\mingw-w64-binutils\\binutils-2.47\\zlib\\LICENSE"
+  },
+  {
+    "archive": "gcc-16.2.0.tar.xz",
+    "member": "gcc-16.2.0/include/COPYING3",
+    "destination": "third-party-licenses-msys2\\mingw-w64-gcc\\gcc-16.2.0\\include\\COPYING3"
+  },
+  {
+    "archive": "gcc-16.2.0.tar.xz",
+    "member": "gcc-16.2.0/include/COPYING",
+    "destination": "third-party-licenses-msys2\\mingw-w64-gcc\\gcc-16.2.0\\include\\COPYING"
+  },
+  {
+    "archive": "gcc-16.2.0.tar.xz",
+    "member": "gcc-16.2.0/libffi/LICENSE-BUILDTOOLS",
+    "destination": "third-party-licenses-msys2\\mingw-w64-gcc\\gcc-16.2.0\\libffi\\LICENSE-BUILDTOOLS"
+  },
+  {
+    "archive": "gcc-16.2.0.tar.xz",
+    "member": "gcc-16.2.0/libffi/LICENSE",
+    "destination": "third-party-licenses-msys2\\mingw-w64-gcc\\gcc-16.2.0\\libffi\\LICENSE"
+  },
+  {
+    "archive": "gcc-16.2.0.tar.xz",
+    "member": "gcc-16.2.0/zlib/LICENSE",
+    "destination": "third-party-licenses-msys2\\mingw-w64-gcc\\gcc-16.2.0\\zlib\\LICENSE"
+  },
+  {
+    "archive": "gcc-16.2.0.tar.xz",
+    "member": "gcc-16.2.0/libsanitizer/LICENSE.TXT",
+    "destination": "third-party-licenses-msys2\\mingw-w64-gcc\\gcc-16.2.0\\libsanitizer\\LICENSE.TXT"
+  },
+  {
+    "archive": "gcc-16.2.0.tar.xz",
+    "member": "gcc-16.2.0/COPYING.RUNTIME",
+    "destination": "third-party-licenses-msys2\\mingw-w64-gcc\\gcc-16.2.0\\COPYING.RUNTIME"
+  },
+  {
+    "archive": "gcc-16.2.0.tar.xz",
+    "member": "gcc-16.2.0/libphobos/libdruntime/LICENSE.txt",
+    "destination": "third-party-licenses-msys2\\mingw-w64-gcc\\gcc-16.2.0\\libphobos\\libdruntime\\LICENSE.txt"
+  },
+  {
+    "archive": "gcc-16.2.0.tar.xz",
+    "member": "gcc-16.2.0/libphobos/src/LICENSE_1_0.txt",
+    "destination": "third-party-licenses-msys2\\mingw-w64-gcc\\gcc-16.2.0\\libphobos\\src\\LICENSE_1_0.txt"
+  },
+  {
+    "archive": "gcc-16.2.0.tar.xz",
+    "member": "gcc-16.2.0/COPYING3",
+    "destination": "third-party-licenses-msys2\\mingw-w64-gcc\\gcc-16.2.0\\COPYING3"
+  },
+  {
+    "archive": "gcc-16.2.0.tar.xz",
+    "member": "gcc-16.2.0/libgo/LICENSE",
+    "destination": "third-party-licenses-msys2\\mingw-w64-gcc\\gcc-16.2.0\\libgo\\LICENSE"
+  },
+  {
+    "archive": "gcc-16.2.0.tar.xz",
+    "member": "gcc-16.2.0/gcc/COPYING3",
+    "destination": "third-party-licenses-msys2\\mingw-w64-gcc\\gcc-16.2.0\\gcc\\COPYING3"
+  },
+  {
+    "archive": "gcc-16.2.0.tar.xz",
+    "member": "gcc-16.2.0/gcc/COPYING.LIB",
+    "destination": "third-party-licenses-msys2\\mingw-w64-gcc\\gcc-16.2.0\\gcc\\COPYING.LIB"
+  },
+  {
+    "archive": "gcc-16.2.0.tar.xz",
+    "member": "gcc-16.2.0/gcc/COPYING3.LIB",
+    "destination": "third-party-licenses-msys2\\mingw-w64-gcc\\gcc-16.2.0\\gcc\\COPYING3.LIB"
+  },
+  {
+    "archive": "gcc-16.2.0.tar.xz",
+    "member": "gcc-16.2.0/gcc/m2/COPYING.RUNTIME",
+    "destination": "third-party-licenses-msys2\\mingw-w64-gcc\\gcc-16.2.0\\gcc\\m2\\COPYING.RUNTIME"
+  },
+  {
+    "archive": "gcc-16.2.0.tar.xz",
+    "member": "gcc-16.2.0/gcc/m2/COPYING3",
+    "destination": "third-party-licenses-msys2\\mingw-w64-gcc\\gcc-16.2.0\\gcc\\m2\\COPYING3"
+  },
+  {
+    "archive": "gcc-16.2.0.tar.xz",
+    "member": "gcc-16.2.0/gcc/m2/COPYING3.LIB",
+    "destination": "third-party-licenses-msys2\\mingw-w64-gcc\\gcc-16.2.0\\gcc\\m2\\COPYING3.LIB"
+  },
+  {
+    "archive": "gcc-16.2.0.tar.xz",
+    "member": "gcc-16.2.0/gcc/m2/COPYING.FDL",
+    "destination": "third-party-licenses-msys2\\mingw-w64-gcc\\gcc-16.2.0\\gcc\\m2\\COPYING.FDL"
+  },
+  {
+    "archive": "gcc-16.2.0.tar.xz",
+    "member": "gcc-16.2.0/gcc/COPYING",
+    "destination": "third-party-licenses-msys2\\mingw-w64-gcc\\gcc-16.2.0\\gcc\\COPYING"
+  },
+  {
+    "archive": "gcc-16.2.0.tar.xz",
+    "member": "gcc-16.2.0/COPYING.LIB",
+    "destination": "third-party-licenses-msys2\\mingw-w64-gcc\\gcc-16.2.0\\COPYING.LIB"
+  },
+  {
+    "archive": "gcc-16.2.0.tar.xz",
+    "member": "gcc-16.2.0/libgcobol/LICENSE",
+    "destination": "third-party-licenses-msys2\\mingw-w64-gcc\\gcc-16.2.0\\libgcobol\\LICENSE"
+  },
+  {
+    "archive": "gcc-16.2.0.tar.xz",
+    "member": "gcc-16.2.0/COPYING3.LIB",
+    "destination": "third-party-licenses-msys2\\mingw-w64-gcc\\gcc-16.2.0\\COPYING3.LIB"
+  },
+  {
+    "archive": "gcc-16.2.0.tar.xz",
+    "member": "gcc-16.2.0/libgrust/rustc-lib/LICENSE-MIT",
+    "destination": "third-party-licenses-msys2\\mingw-w64-gcc\\gcc-16.2.0\\libgrust\\rustc-lib\\LICENSE-MIT"
+  },
+  {
+    "archive": "gcc-16.2.0.tar.xz",
+    "member": "gcc-16.2.0/libgrust/rustc-lib/LICENSE-APACHE",
+    "destination": "third-party-licenses-msys2\\mingw-w64-gcc\\gcc-16.2.0\\libgrust\\rustc-lib\\LICENSE-APACHE"
+  },
+  {
+    "archive": "gcc-16.2.0.tar.xz",
+    "member": "gcc-16.2.0/libiberty/copying-lib.texi",
+    "destination": "third-party-licenses-msys2\\mingw-w64-gcc\\gcc-16.2.0\\libiberty\\copying-lib.texi"
+  },
+  {
+    "archive": "gcc-16.2.0.tar.xz",
+    "member": "gcc-16.2.0/libiberty/COPYING.LIB",
+    "destination": "third-party-licenses-msys2\\mingw-w64-gcc\\gcc-16.2.0\\libiberty\\COPYING.LIB"
+  },
+  {
+    "archive": "gcc-16.2.0.tar.xz",
+    "member": "gcc-16.2.0/libquadmath/COPYING.LIB",
+    "destination": "third-party-licenses-msys2\\mingw-w64-gcc\\gcc-16.2.0\\libquadmath\\COPYING.LIB"
+  },
+  {
+    "archive": "gcc-16.2.0.tar.xz",
+    "member": "gcc-16.2.0/libcody/LICENSE",
+    "destination": "third-party-licenses-msys2\\mingw-w64-gcc\\gcc-16.2.0\\libcody\\LICENSE"
+  },
+  {
+    "archive": "gcc-16.2.0.tar.xz",
+    "member": "gcc-16.2.0/COPYING",
+    "destination": "third-party-licenses-msys2\\mingw-w64-gcc\\gcc-16.2.0\\COPYING"
+  },
+  {
+    "archive": "gmp-6.3.0.tar.xz",
+    "member": "gmp-6.3.0/COPYING",
+    "destination": "third-party-licenses-msys2\\mingw-w64-gmp\\gmp-6.3.0\\COPYING"
+  },
+  {
+    "archive": "gmp-6.3.0.tar.xz",
+    "member": "gmp-6.3.0/COPYING.LESSERv3",
+    "destination": "third-party-licenses-msys2\\mingw-w64-gmp\\gmp-6.3.0\\COPYING.LESSERv3"
+  },
+  {
+    "archive": "gmp-6.3.0.tar.xz",
+    "member": "gmp-6.3.0/COPYINGv3",
+    "destination": "third-party-licenses-msys2\\mingw-w64-gmp\\gmp-6.3.0\\COPYINGv3"
+  },
+  {
+    "archive": "gmp-6.3.0.tar.xz",
+    "member": "gmp-6.3.0/COPYINGv2",
+    "destination": "third-party-licenses-msys2\\mingw-w64-gmp\\gmp-6.3.0\\COPYINGv2"
+  },
+  {
+    "archive": "isl-0.28.tar.xz",
+    "member": "isl-0.28/LICENSE",
+    "destination": "third-party-licenses-msys2\\mingw-w64-isl\\isl-0.28\\LICENSE"
+  },
+  {
+    "archive": "libiconv-1.19.tar.gz",
+    "member": "libiconv-1.19/COPYING.LIB",
+    "destination": "third-party-licenses-msys2\\mingw-w64-libiconv\\libiconv-1.19\\COPYING.LIB"
+  },
+  {
+    "archive": "libiconv-1.19.tar.gz",
+    "member": "libiconv-1.19/libcharset/COPYING.LIB",
+    "destination": "third-party-licenses-msys2\\mingw-w64-libiconv\\libiconv-1.19\\libcharset\\COPYING.LIB"
+  },
+  {
+    "archive": "libiconv-1.19.tar.gz",
+    "member": "libiconv-1.19/COPYING",
+    "destination": "third-party-licenses-msys2\\mingw-w64-libiconv\\libiconv-1.19\\COPYING"
+  },
+  {
+    "archive": "mpc-1.4.1.tar.xz",
+    "member": "mpc-1.4.1/COPYING.LESSER",
+    "destination": "third-party-licenses-msys2\\mingw-w64-mpc\\mpc-1.4.1\\COPYING.LESSER"
+  },
+  {
+    "archive": "mpfr-4.2.2.tar.xz",
+    "member": "mpfr-4.2.2/COPYING.LESSER",
+    "destination": "third-party-licenses-msys2\\mingw-w64-mpfr\\mpfr-4.2.2\\COPYING.LESSER"
+  },
+  {
+    "archive": "mpfr-4.2.2.tar.xz",
+    "member": "mpfr-4.2.2/COPYING",
+    "destination": "third-party-licenses-msys2\\mingw-w64-mpfr\\mpfr-4.2.2\\COPYING"
+  },
+  {
+    "archive": "tzcode2026d.tar.gz",
+    "member": "LICENSE",
+    "destination": "third-party-licenses-msys2\\mingw-w64-tzdata\\LICENSE"
+  },
+  {
+    "archive": "tzdata2026d.tar.gz",
+    "member": "LICENSE",
+    "destination": "third-party-licenses-msys2\\mingw-w64-tzdata\\LICENSE"
+  },
+  {
+    "archive": "zlib-1.3.2.tar.xz",
+    "member": "zlib-1.3.2/LICENSE",
+    "destination": "third-party-licenses-msys2\\mingw-w64-zlib\\zlib-1.3.2\\LICENSE"
+  },
+  {
+    "archive": "zlib-1.3.2.tar.xz",
+    "member": "zlib-1.3.2/contrib/dotzlib/LICENSE_1_0.txt",
+    "destination": "third-party-licenses-msys2\\mingw-w64-zlib\\zlib-1.3.2\\contrib\\dotzlib\\LICENSE_1_0.txt"
+  },
+  {
+    "archive": "zlib-1.3.2.tar.xz",
+    "member": "zlib-1.3.2/contrib/minizip/LICENSE.Info-Zip",
+    "destination": "third-party-licenses-msys2\\mingw-w64-zlib\\zlib-1.3.2\\contrib\\minizip\\LICENSE.Info-Zip"
+  },
+  {
+    "archive": "zstd-1.5.7.tar.gz",
+    "member": "zstd-1.5.7/COPYING",
+    "destination": "third-party-licenses-msys2\\mingw-w64-zstd\\zstd-1.5.7\\COPYING"
+  },
+  {
+    "archive": "zstd-1.5.7.tar.gz",
+    "member": "zstd-1.5.7/LICENSE",
+    "destination": "third-party-licenses-msys2\\mingw-w64-zstd\\zstd-1.5.7\\LICENSE"
+  },
+  {
+    "archive": "zstd-1.5.7.tar.gz",
+    "member": "zstd-1.5.7/build/LICENSE",
+    "destination": "third-party-licenses-msys2\\mingw-w64-zstd\\zstd-1.5.7\\build\\LICENSE"
+  }
+]

@@ -72,6 +72,7 @@ def test_gui_constructs_and_callbacks_do_not_raise(tmp_path, monkeypatch):
         root.update_idletasks()
 
         # --- 配置区初值 ---
+        assert app.var_submit.get() is False
         assert app.var_provider.get()
         assert app.var_base_url.get()
         assert app.var_model.get()

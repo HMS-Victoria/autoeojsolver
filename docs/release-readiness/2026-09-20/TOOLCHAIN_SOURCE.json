@@ -1,0 +1,10 @@
+{
+  "provider": "MSYS2",
+  "target": "Native Windows x86_64 UCRT MinGW-w64",
+  "root_package": "mingw-w64-ucrt-x86_64-gcc",
+  "version": "16.2.0-3",
+  "manifest": "MSYS2_TOOLCHAIN_MANIFEST.json",
+  "source_companion": "EOJSolver-4.0.1-toolchain-sources.zip",
+  "binary_modifications": "None; complete ucrt64 payloads relocated to toolchain/ucrt64",
+  "scope": "All 17 recursive runtime dependencies, including headers, CRT, standard C++ library and compiler internals. MSYS2 installation is not required."
+}
